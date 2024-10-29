@@ -66,7 +66,7 @@ const Footer = () => {
         validate={validate}
       >
         {({ errors, touched, handleChange, values }) => (
-          <FooterForm data-netlify="true" method="POST">
+          <FooterForm data-netlify="true" netlify method="POST">
             <StyledField
               type="email"
               name="email"
