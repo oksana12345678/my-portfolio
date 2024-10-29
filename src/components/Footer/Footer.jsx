@@ -1,4 +1,3 @@
-import { ErrorMessage, Formik } from "formik";
 import { useState } from "react";
 import {
   ErrorMessageStyle,
@@ -11,40 +10,51 @@ import {
   StyledField,
   SubmitButton,
 } from "./Footer.styled";
-
 import meSrc from "../../assets/front.png";
 
 const Footer = () => {
+  const [formValues, setFormValues] = useState({ email: "", message: "" });
+  const [errors, setErrors] = useState({});
   const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const initialValues = {
-    email: "",
-    message: "",
+  const validate = () => {
+    const newErrors = {};
+    if (!formValues.email) {
+      newErrors.email = "Required";
+    } else if (!/\S+@\S+\.\S+/.test(formValues.email)) {
+      newErrors.email = "Invalid email address";
+    }
+    if (!formValues.message.trim()) {
+      newErrors.message = "Required";
+    }
+    setErrors(newErrors);
+    return Object.keys(newErrors).length === 0;
   };
 
-  const validate = (values) => {
-    const errors = {};
-    if (!values.email) {
-      errors.email = "Required";
-    } else if (!/\S+@\S+\.\S+/.test(values.email)) {
-      errors.email = "Invalid email address";
-    }
-    if (!values.message || !values.message.trim()) {
-      errors.message = "Required";
-    }
-    return errors;
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormValues((prevValues) => ({
+      ...prevValues,
+      [name]: value,
+    }));
   };
 
-  const handleSubmit = (values, { resetForm }) => {
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    if (!validate()) return;
+
     setIsSubmitting(true);
 
     fetch("/", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: new URLSearchParams(values).toString(),
+      body: new URLSearchParams({
+        ...formValues,
+        "form-name": "contact", // Обов'язково вкажіть ім'я форми
+      }).toString(),
     })
       .then(() => {
-        resetForm(); // Виклик функції
+        setFormValues({ email: "", message: "" });
         alert("Your message has been sent!");
       })
       .catch((error) => {
@@ -60,52 +70,45 @@ const Footer = () => {
     <FooterContainer id="contacts">
       <FooterTitle>
         <FooterTitleSpan>
-          <FooterTitleImg src={meSrc} />
+          <FooterTitleImg src={meSrc} alt="My Picture" />
           Let’s work
         </FooterTitleSpan>
         <FooterTitleSecondPart>together</FooterTitleSecondPart>
       </FooterTitle>
       <p>Contact me</p>
-      <Formik
-        initialValues={initialValues}
+
+      <FooterForm
+        data-netlify="true"
+        name="contact"
+        method="POST"
         onSubmit={handleSubmit}
-        validate={validate}
       >
-        {({ errors, touched, handleChange, values }) => (
-          <FooterForm data-netlify="true" name="contact" method="POST">
-            <StyledField
-              type="email"
-              name="email"
-              placeholder="Enter your email"
-              onChange={handleChange}
-              value={values.email}
-              $isError={errors.email && touched.email}
-              $isValid={!errors.email && touched.email}
-            />
-            <ErrorMessage name="email">
-              {(msg) => <ErrorMessageStyle>{msg}</ErrorMessageStyle>}
-            </ErrorMessage>
-            <input type="hidden" name="form-name" value="contact" />
+        <StyledField
+          type="email"
+          name="email"
+          placeholder="Enter your email"
+          onChange={handleChange}
+          value={formValues.email}
+          $isError={errors.email}
+        />
+        {errors.email && <ErrorMessageStyle>{errors.email}</ErrorMessageStyle>}
 
-            <StyledField
-              as="textarea"
-              name="message"
-              placeholder="Enter your message"
-              onChange={handleChange}
-              value={values.message}
-              $isError={errors.message && touched.message}
-              $isValid={!errors.message && touched.message}
-            />
-            <ErrorMessage name="message">
-              {(msg) => <ErrorMessageStyle>{msg}</ErrorMessageStyle>}
-            </ErrorMessage>
-
-            <SubmitButton type="submit" disabled={isSubmitting}>
-              {isSubmitting ? "Sending..." : "Send"}
-            </SubmitButton>
-          </FooterForm>
+        <StyledField
+          as="textarea"
+          name="message"
+          placeholder="Enter your message"
+          onChange={handleChange}
+          value={formValues.message}
+          $isError={errors.message}
+        />
+        {errors.message && (
+          <ErrorMessageStyle>{errors.message}</ErrorMessageStyle>
         )}
-      </Formik>
+
+        <SubmitButton type="submit" disabled={isSubmitting}>
+          {isSubmitting ? "Sending..." : "Send"}
+        </SubmitButton>
+      </FooterForm>
     </FooterContainer>
   );
 };

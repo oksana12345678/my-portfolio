@@ -1,4 +1,3 @@
-import { Field, Form } from "formik";
 import styled, { css } from "styled-components";
 
 export const FooterContainer = styled.div`
@@ -47,7 +46,7 @@ export const FooterTitleImg = styled.img`
   }
 `;
 
-export const FooterForm = styled(Form)`
+export const FooterForm = styled.form`
   @media screen and (min-width: 320px) {
     display: flex;
     flex-direction: column;
@@ -61,7 +60,7 @@ export const FooterForm = styled(Form)`
   }
 `;
 
-export const StyledField = styled(Field)`
+export const StyledField = styled.input`
   padding: 12px;
   border: none;
   border-bottom: 1px solid var(--grey-secondary-color);
