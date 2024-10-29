@@ -44,9 +44,15 @@ const Footer = () => {
       body: new URLSearchParams(values).toString(),
     })
       .then(() => {
-        resetForm;
+        resetForm(); // Виклик функції
+        alert("Your message has been sent!");
       })
-      .catch((error) => console.log("Sending form failed"))
+      .catch((error) => {
+        console.error("Sending form failed", error);
+        alert(
+          "There was an error sending your message. Please try again later."
+        );
+      })
       .finally(() => setIsSubmitting(false));
   };
 
@@ -66,7 +72,7 @@ const Footer = () => {
         validate={validate}
       >
         {({ errors, touched, handleChange, values }) => (
-          <FooterForm data-netlify="true" netlify method="POST" name="contact">
+          <FooterForm data-netlify="true" method="POST" name="contact">
             <StyledField
               type="email"
               name="email"
