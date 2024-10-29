@@ -13,7 +13,6 @@ import {
 } from "./Footer.styled";
 
 import meSrc from "../../assets/front.png";
-import axios from "axios";
 
 const Footer = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -38,20 +37,17 @@ const Footer = () => {
 
   const handleSubmit = (values, { resetForm }) => {
     setIsSubmitting(true);
-    // const { email, message } = values;
-    const formData = new FormData(values);
 
-    axios
-      .post("/", new URLSearchParams(formData).toString(), {
-        headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      })
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: new URLSearchParams(values).toString(),
+    })
       .then(() => {
-        resetForm();
+        resetForm;
       })
-      .catch((error) => console.log("Sending form failed", error))
+      .catch((error) => console.log("Sending form failed"))
       .finally(() => setIsSubmitting(false));
-
-    // resetForm();
   };
 
   return (
