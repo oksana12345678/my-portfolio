@@ -1,6 +1,5 @@
 import { ErrorMessage, Formik } from "formik";
 import { useState } from "react";
-import axios from "axios";
 import {
   ErrorMessageStyle,
   FooterContainer,
@@ -39,19 +38,9 @@ const Footer = () => {
   const handleSubmit = (values, { resetForm }) => {
     setIsSubmitting(true);
 
-    axios
-      .post("/", new URLSearchParams(values).toString(), {
-        headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      })
-      .then(() => {
-        alert("Form successfully submitted!");
-        resetForm();
-      })
-      .catch((error) => {
-        alert("An error occurred. Please try again.");
-        console.error(error);
-      })
-      .finally(() => setIsSubmitting(false));
+    alert("Form successfully submitted!");
+    resetForm();
+    setIsSubmitting(false);
   };
 
   return (
@@ -70,7 +59,7 @@ const Footer = () => {
         validate={validate}
       >
         {({ errors, touched, handleChange, values }) => (
-          <FooterForm>
+          <FooterForm data-netlify="true" method="POST">
             <StyledField
               type="email"
               name="email"
