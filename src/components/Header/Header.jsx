@@ -7,13 +7,15 @@ import {
   MainContainer,
 } from "./Header.styled";
 
+import logo from "../../../public/gray_on_trans-removebg-preview.webp";
+
 const Header = () => {
   return (
     <>
       <MainContainer>
         <ImageStyled>
           <a href="#contacts">
-            <Image src="../../../public/gray_on_trans-removebg-preview.webp" />
+            <Image src={logo} />
           </a>
         </ImageStyled>
 
