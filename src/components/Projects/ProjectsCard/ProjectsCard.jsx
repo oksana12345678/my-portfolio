@@ -16,6 +16,7 @@ const ProjectsCard = ({ project }) => {
   const { KeyTechnologies } = project;
   return (
     <ContainerDesc>
+      {/* TODO change some style */}
       <ImageContainer>
         <PortfolioImage src={project.image} />
       </ImageContainer>
