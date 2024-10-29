@@ -38,11 +38,11 @@ const Footer = () => {
 
   const handleSubmit = (values, { resetForm }) => {
     setIsSubmitting(true);
-    const { email, message } = values;
-    console.log(email, message);
+    // const { email, message } = values;
+    const formData = new FormData(values);
 
     axios
-      .post("/", new URLSearchParams({ email, message }).toString(), {
+      .post("/", new URLSearchParams(formData).toString(), {
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
       })
       .then(() => {
@@ -70,7 +70,7 @@ const Footer = () => {
         validate={validate}
       >
         {({ errors, touched, handleChange, values }) => (
-          <FooterForm data-netlify="true" netlify method="POST">
+          <FooterForm data-netlify="true" netlify method="POST" name="contact">
             <StyledField
               type="email"
               name="email"
