@@ -45,6 +45,13 @@ const Footer = () => {
 
     setIsSubmitting(true);
 
+    console.log(
+      new URLSearchParams({
+        ...formValues,
+        "form-name": "contact",
+      }).toString()
+    );
+
     fetch("/", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
@@ -82,8 +89,10 @@ const Footer = () => {
         name="contact"
         method="POST"
         onSubmit={handleSubmit}
-        action="#"
+        action="/"
       >
+        <input type="hidden" name="form-name" value="contact" />
+
         <StyledField
           type="email"
           name="email"
