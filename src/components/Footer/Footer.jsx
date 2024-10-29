@@ -72,7 +72,7 @@ const Footer = () => {
         validate={validate}
       >
         {({ errors, touched, handleChange, values }) => (
-          <FooterForm data-netlify="true" method="POST" name="contact">
+          <FooterForm data-netlify="true" name="contact" method="POST">
             <StyledField
               type="email"
               name="email"
@@ -85,6 +85,7 @@ const Footer = () => {
             <ErrorMessage name="email">
               {(msg) => <ErrorMessageStyle>{msg}</ErrorMessageStyle>}
             </ErrorMessage>
+            <input type="hidden" name="form-name" value="contact" />
 
             <StyledField
               as="textarea"
