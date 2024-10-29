@@ -64,7 +64,6 @@ const Footer = () => {
         initialValues={initialValues}
         onSubmit={handleSubmit}
         validate={validate}
-        data-netlify="true"
       >
         {({ errors, touched, handleChange, values }) => (
           <FooterForm data-netlify="true" method="POST">
