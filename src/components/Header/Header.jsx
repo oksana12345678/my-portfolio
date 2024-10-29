@@ -24,10 +24,10 @@ const Header = () => {
           </li>
 
           <li>
-            <LinkStyle href="#contacts">Projects</LinkStyle>
+            <LinkStyle href="#projects">Projects</LinkStyle>
           </li>
           <li>
-            <LinkStyle href="#contacts">Contacts</LinkStyle>
+            <LinkStyle href="#contacts">Contact Me</LinkStyle>
           </li>
         </ListStyle>
       </MainContainer>

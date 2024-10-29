@@ -20,7 +20,6 @@ export const SwiperWrapper = styled.div`
     .swiper-slide {
       display: flex;
       justify-content: center;
-      width: 120px;
     }
   }
 
@@ -42,7 +41,7 @@ export const SwiperWrapper = styled.div`
 
 export const ContainerSliderItem = styled.div`
   @media screen and (min-width: 320px) {
-    border: 1px solid var(--bg-button-color);
+    border: 1px solid var(--grey-secondary-color);
     border-radius: 100%;
     width: 120px;
     height: 120px;
@@ -50,8 +49,11 @@ export const ContainerSliderItem = styled.div`
     align-items: center;
     justify-content: center;
 
-    background-color: ${({ $isHighlighted }) =>
-      $isHighlighted ? "var(--accent-color)" : "transparent"};
+    background: ${({ $isHighlighted }) =>
+      $isHighlighted ? "var(--bg-button-color)" : "transparent"};
+    border: ${({ $isHighlighted }) =>
+      $isHighlighted ? "none" : "1px solid var(--grey-secondary-color)"};
+
     transition: background-color 0.3s ease;
   }
 
@@ -68,9 +70,14 @@ export const ButtonNext = styled.button`
 
 export const ArrowIconNext = styled(IoArrowForwardOutline)`
   @media screen and (min-width: 320px) {
-    width: 40px;
-    height: 40px;
-    color: var(--bg-button-color);
+    width: 38px;
+    height: 38px;
+    color: var(--grey-secondary-color);
+    transition: color 400ms ease-in-out;
+
+    &:hover {
+      color: var(--accent-color-light-hover);
+    }
   }
 
   @media screen and (min-width: 768px) {

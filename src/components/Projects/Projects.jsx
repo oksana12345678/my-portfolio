@@ -1,10 +1,15 @@
-import { MainContainerProjects, SectionStyled } from "./Projects.styled";
+import {
+  MainContainerProjects,
+  SectionStyled,
+  TitleProjects,
+} from "./Projects.styled";
 import ProjectsList from "./ProjectsList/ProjectsList";
 
 const Projects = () => {
   return (
-    <SectionStyled>
+    <SectionStyled id="projects">
       <MainContainerProjects>
+        <TitleProjects>Projects</TitleProjects>
         <ProjectsList />
       </MainContainerProjects>
     </SectionStyled>

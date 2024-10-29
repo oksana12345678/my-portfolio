@@ -1,10 +1,15 @@
 import { SwiperSlide, Swiper } from "swiper/react";
 import "swiper/css";
-import { ArrowIconNext, ButtonNext } from "../../AboutMe/Skills/Skills.styled";
 import ProjectsCard from "../ProjectsCard/ProjectsCard";
 import { Navigation } from "swiper/modules";
 import { useRef } from "react";
-import { SwiperItem } from "./ProjectsList.styled";
+import {
+  ButtonContainer,
+  ButtonNextIcon,
+  ButtonPortfolio,
+  ButtonPrevIcon,
+  SwiperItem,
+} from "./ProjectsList.styled";
 import {
   movieFinder,
   portfolio,
@@ -14,7 +19,7 @@ import {
 } from "../../../assets/portfolio";
 
 const ProjectsList = () => {
-  const swiper = useRef(null);
+  const swiperRefTwo = useRef(null);
 
   const PROJECTS = [
     {
@@ -137,21 +142,10 @@ Responsive Design: Optimized for all devices (mobile, tablet, desktop).
   return (
     <div>
       <Swiper
-        onSwiper={(swiper) => (swiper.current = swiper)}
+        onSwiper={(swiper) => (swiperRefTwo.current = swiper)}
         modules={[Navigation]}
         loop={true}
         slidesPerView={1}
-        // breakpoints={{
-        //   320: {
-        //     slidesPerView: 1,
-        //   },
-        //   640: {
-        //     slidesPerView: 2,
-        //     spaceBetween: 16,
-        //   },
-        //   768: { slidesPerView: 2, spaceBetween: 16 },
-        //   1024: { slidesPerView: "auto" },
-        // }}
       >
         {PROJECTS.map((project, index) => (
           <SwiperSlide key={index}>
@@ -161,9 +155,14 @@ Responsive Design: Optimized for all devices (mobile, tablet, desktop).
           </SwiperSlide>
         ))}
       </Swiper>
-      <ButtonNext onClick={() => swiper.current?.slideNext()}>
-        <ArrowIconNext />
-      </ButtonNext>
+      <ButtonContainer>
+        <ButtonPortfolio onClick={() => swiperRefTwo.current?.slidePrev()}>
+          <ButtonPrevIcon />
+        </ButtonPortfolio>
+        <ButtonPortfolio onClick={() => swiperRefTwo.current?.slideNext()}>
+          <ButtonNextIcon />
+        </ButtonPortfolio>
+      </ButtonContainer>
     </div>
   );
 };

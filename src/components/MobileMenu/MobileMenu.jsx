@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import {
   BurgerButton,
   DropdownMenu,
@@ -13,6 +13,23 @@ const MobileMenu = () => {
     setIsOpen(!isOpen);
   };
 
+  const handleMenuItemClick = () => {
+    setIsOpen(false);
+  };
+
+  useEffect(() => {
+    if (isOpen) {
+      document.body.classList.add("no-scroll");
+    } else {
+      document.body.classList.remove("no-scroll");
+    }
+
+    // Clean up the class on component unmount
+    return () => {
+      document.body.classList.remove("no-scroll");
+    };
+  }, [isOpen]);
+
   return (
     <MenuContainer>
       <BurgerButton onClick={toggleMenu} className={isOpen ? "open" : ""}>
@@ -23,13 +40,19 @@ const MobileMenu = () => {
 
       <DropdownMenu $isOpen={isOpen}>
         <li>
-          <MenuItem href="#about-me">About Me</MenuItem>
+          <MenuItem href="#about-me" onClick={handleMenuItemClick}>
+            About Me
+          </MenuItem>
         </li>
         <li>
-          <MenuItem href="#projects">Projects</MenuItem>
+          <MenuItem href="#projects" onClick={handleMenuItemClick}>
+            Projects
+          </MenuItem>
         </li>
         <li>
-          <MenuItem href="#contacts">Contacts</MenuItem>
+          <MenuItem href="#contacts" onClick={handleMenuItemClick}>
+            Contacts
+          </MenuItem>
         </li>
       </DropdownMenu>
     </MenuContainer>

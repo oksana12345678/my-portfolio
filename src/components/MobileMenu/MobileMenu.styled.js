@@ -24,7 +24,7 @@ export const BurgerButton = styled.div`
   div {
     width: 100%;
     height: 4px;
-    background-color: var(--bg-button-color);
+    background: var(--accent-color);
     border-radius: 2px;
     transition: transform 0.3s ease;
   }
@@ -49,7 +49,7 @@ export const DropdownMenu = styled.ul`
   top: 50%;
   right: 50%;
   transform: translate(50%, 10%);
-  background-color: var(--light-text-color);
+  background: var(--bg-button-color);
   width: 100%;
   height: calc(100vh - 90px);
   border-radius: 10px;
@@ -68,11 +68,13 @@ export const MenuItem = styled.a`
   color: var(--light-text-color);
   padding: 16px 12px;
   border-radius: 16px;
-  background-color: var(--bg-button-color);
+  background: var(--accent-color);
   align-items: center;
   justify-content: center;
+  transition: all 400ms ease-in-out;
 
   &:hover {
-    color: var(--accent-color);
+    box-shadow: 0 4px 15px var(--accent-color-light-hover),
+      0 0 25px var(--accent-color-light-hover);
   }
 `;

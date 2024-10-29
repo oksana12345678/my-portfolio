@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const MainContainer = styled.div`
+export const MainContainer = styled.nav`
   @media screen and (min-width: 320px) {
     display: flex;
     align-items: center;
@@ -38,10 +38,11 @@ export const LinkStyle = styled.a`
   color: var(--light-text-color);
   padding: 16px 12px;
   border-radius: 16px;
-  background-color: var(--accent-color);
-  transition: background-color 0.3s ease-in-out;
+  background: var(--accent-color);
+  transition: all 0.3s ease-in-out;
 
   &:hover {
-    background-color: var(--accent-color-light-hover);
+    box-shadow: 0 4px 15px var(--accent-color-light-hover),
+      0 0 25px var(--accent-color-light-hover);
   }
 `;

@@ -61,7 +61,8 @@ const Skills = () => {
           },
           640: { slidesPerView: 3 },
           768: { slidesPerView: 3 },
-          1024: { slidesPerView: "auto" },
+          1024: { slidesPerView: 4 },
+          1440: { slidesPerView: 6 },
         }}
       >
         {SKILLS.map((skill, index) => (

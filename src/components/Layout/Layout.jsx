@@ -1,5 +1,6 @@
+import Footer from "../Footer/Footer";
 import Header from "../Header/Header";
-import { HeaderStyled } from "./Layout.styled";
+import { FooterStyled, HeaderStyled } from "./Layout.styled";
 
 const Layout = ({ children }) => {
   return (
@@ -8,6 +9,9 @@ const Layout = ({ children }) => {
         <Header />
       </HeaderStyled>
       <main>{children}</main>
+      <FooterStyled>
+        <Footer />
+      </FooterStyled>
     </>
   );
 };
