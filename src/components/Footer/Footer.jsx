@@ -82,6 +82,7 @@ const Footer = () => {
         name="contact"
         method="POST"
         onSubmit={handleSubmit}
+        action="#"
       >
         <StyledField
           type="email"
