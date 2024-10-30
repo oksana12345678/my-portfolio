@@ -33,6 +33,7 @@ const Skills = () => {
     "Tailwind",
     "RTK Query",
     "Styled component",
+    "Telegram applications",
     "Vite",
     "Polish",
     "English",
