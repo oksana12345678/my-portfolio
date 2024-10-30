@@ -45,12 +45,13 @@ const Footer = () => {
 
     setIsSubmitting(true);
 
-    console.log(formValues);
-
     fetch("/", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: new URLSearchParams(formValues).toString(),
+      body: new URLSearchParams({
+        "form-name": "contact",
+        ...formValues,
+      }).toString(),
     })
       .then((response) => {
         if (response.ok) {
@@ -85,8 +86,15 @@ const Footer = () => {
         name="contact"
         method="post"
         onSubmit={handleSubmit}
-        action="#"
+        action="/"
+        data-netlify-honeypot="bot-field"
       >
+        <input type="hidden" name="form-name" value="contact" />
+        <p style={{ display: "none" }}>
+          <label>
+            Don’t fill this out if you're human: <input name="bot-field" />
+          </label>
+        </p>
 
         <StyledField
           type="email"
