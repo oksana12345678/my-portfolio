@@ -16,7 +16,6 @@ const ProjectsCard = ({ project }) => {
   const { KeyTechnologies } = project;
   return (
     <ContainerDesc>
-      {/* TODO change some style */}
       <ImageContainer>
         <PortfolioImage src={project.image} />
       </ImageContainer>
@@ -39,9 +38,11 @@ const ProjectsCard = ({ project }) => {
         <TechnologyAndRepoContainer>
           <NameAndLink>
             <p>Key technologies:</p>
-            <LinksStyled href={project.ProjectRepository} target="blank">
-              Project repository
-            </LinksStyled>
+            {project.ProjectRepository && (
+              <LinksStyled href={project.ProjectRepository} target="blank">
+                Project repository
+              </LinksStyled>
+            )}
           </NameAndLink>
           <ListOfTechnology>
             {KeyTechnologies.map((technology, index) => (

@@ -4,4 +4,6 @@ import water from "./water.png";
 import movieFinder from "./movieFinder.png";
 import portfolio from "./portfolio.png";
 
-export { yachtJet, travel, water, movieFinder, portfolio };
+import ItAcademy from "./ItAcademy.png";
+
+export { yachtJet, travel, water, movieFinder, portfolio, ItAcademy };
