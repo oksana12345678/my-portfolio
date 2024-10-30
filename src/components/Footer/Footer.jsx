@@ -45,6 +45,15 @@ const Footer = () => {
 
     setIsSubmitting(true);
 
+    console.log(
+      new URLSearchParams({
+        "form-name": "contact",
+        ...formValues,
+      }).toString()
+    );
+
+    console.log(new URLSearchParams({ ...formValues }).toString());
+
     fetch("/", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
