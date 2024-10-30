@@ -83,11 +83,10 @@ const Footer = () => {
       <FooterForm
         data-netlify="true"
         name="contact"
-        method="POST"
+        method="post"
         onSubmit={handleSubmit}
         action="#"
       >
-        <input type="hidden" name="form-name" value="contact" />
 
         <StyledField
           type="email"
