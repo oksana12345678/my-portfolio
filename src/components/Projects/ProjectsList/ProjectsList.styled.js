@@ -38,6 +38,7 @@ export const ButtonPortfolio = styled.button`
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
   transition: border-color 0.3s ease, color 0.3s ease;
 
   &:hover {

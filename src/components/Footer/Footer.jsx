@@ -11,6 +11,7 @@ import {
   SubmitButton,
 } from "./Footer.styled";
 import meSrc from "../../assets/front.png";
+import showToast from "../showToast";
 
 const Footer = () => {
   const [formValues, setFormValues] = useState({ email: "", message: "" });
@@ -56,15 +57,15 @@ const Footer = () => {
       .then((response) => {
         if (response.ok) {
           setFormValues({ email: "", message: "" });
-          alert("Your message has been sent!");
+          showToast("Your message has been sent!", "success");
         } else {
-          alert("Form submission failed. Please try again.");
+          showToast("Form submission failed. Please try again.", "error");
         }
       })
       .catch((error) => {
-        console.error("Sending form failed", error);
-        alert(
-          "There was an error sending your message. Please try again later."
+        showToast(
+          ` There was an error sending your message. Please try again later.  ${error}`,
+          "error"
         );
       })
       .finally(() => setIsSubmitting(false));

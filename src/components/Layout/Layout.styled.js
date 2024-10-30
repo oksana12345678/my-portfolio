@@ -5,7 +5,7 @@ export const HeaderStyled = styled.header`
   background-color: transparent;
   position: absolute;
   top: 10px;
-  width: calc(100vw - 5%);
+  width: 100%;
   right: 50%;
   transform: translate(50%, 0);
 `;

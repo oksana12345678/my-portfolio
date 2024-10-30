@@ -30,6 +30,7 @@ export const MainHeroContainer = styled.div`
     align-items: flex-end;
     justify-content: flex-end;
     flex-direction: column;
+    width: 100%;
     gap: 120px;
   }
 

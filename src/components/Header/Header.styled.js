@@ -5,10 +5,10 @@ export const MainContainer = styled.nav`
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 20px;
+    padding: 0 16px;
   }
   @media screen and (min-width: 768px) {
-    padding: 0 40px;
+    padding: 0 32px;
   }
 `;
 export const ImageStyled = styled.div`

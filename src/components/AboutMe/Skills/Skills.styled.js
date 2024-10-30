@@ -4,7 +4,7 @@ import styled from "styled-components";
 export const SwiperWrapper = styled.div`
   @media screen and (min-width: 320px) {
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
     padding: 0 16px;
 
     .swiper {
@@ -74,6 +74,7 @@ export const ArrowIconNext = styled(IoArrowForwardOutline)`
     height: 38px;
     color: var(--grey-secondary-color);
     transition: color 400ms ease-in-out;
+    cursor: pointer;
 
     &:hover {
       color: var(--accent-color-light-hover);

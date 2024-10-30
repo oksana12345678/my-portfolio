@@ -101,6 +101,12 @@ export const SubmitButton = styled.button`
     width: 100px;
     height: 100px;
     border-radius: 100%;
+    cursor: pointer;
+    transition: background 0.4s ease-in-out;
+
+    &:hover {
+      background: var(--bg-hover-color);
+    }
   }
 
   @media screen and (min-width: 768px) {
