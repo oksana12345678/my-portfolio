@@ -7,7 +7,7 @@ export const SwiperItem = styled.div`
     border-radius: 16px;
     min-width: 288px;
     margin: 0 auto;
-    height: 640px;
+    height: 642px;
     overflow: scroll;
   }
 

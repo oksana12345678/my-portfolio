@@ -6,7 +6,7 @@ export const ContainerDesc = styled.div`
     padding: 12px;
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: 8px;
     height: 100%;
     justify-content: end;
   }
@@ -44,7 +44,7 @@ export const LinksStyled = styled.a`
   @media screen and (min-width: 320px) {
     color: var(--light-text-color);
     font-weight: 500;
-    font-size: 20px;
+    font-size: 16px;
     letter-spacing: -0.02em;
     border: 1px solid var(--grey-secondary-color);
     border-radius: 16px;
@@ -100,7 +100,7 @@ export const ListItemOfTechnology = styled.li`
 
 export const LongDescContainer = styled.div`
   @media screen and (min-width: 320px) {
-    height: 100px;
+    height: 90px;
     overflow: scroll;
   }
 
@@ -125,6 +125,7 @@ export const PortfolioImage = styled.img`
     width: 100%;
     object-fit: cover;
     border-radius: 16px;
+    height: 164px;
   }
 
   @media screen and (min-width: 768px) {
