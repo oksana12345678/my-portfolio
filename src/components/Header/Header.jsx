@@ -7,7 +7,7 @@ import {
   MainContainer,
 } from "./Header.styled";
 
-import logo from "../../../public/gray_on_trans-removebg-preview.webp";
+import logo from "/gray_on_trans-removebg-preview.webp";
 
 const Header = () => {
   return (
