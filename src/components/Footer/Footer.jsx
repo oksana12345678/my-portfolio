@@ -85,7 +85,7 @@ const Footer = () => {
         name="contact"
         method="POST"
         onSubmit={handleSubmit}
-        action="/"
+        action="#"
       >
         <input type="hidden" name="form-name" value="contact" />
 
