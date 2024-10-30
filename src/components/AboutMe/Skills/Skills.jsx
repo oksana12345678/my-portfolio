@@ -32,6 +32,7 @@ const Skills = () => {
     "RESTful API",
     "Tailwind",
     "RTK Query",
+    "Styled component",
     "Vite",
     "Polish",
     "English",
