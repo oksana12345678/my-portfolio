@@ -45,24 +45,21 @@ const Footer = () => {
 
     setIsSubmitting(true);
 
-    console.log(
-      new URLSearchParams({
-        ...formValues,
-        "form-name": "contact",
-      }).toString()
-    );
-
     fetch("/", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: new URLSearchParams({
         ...formValues,
-        "form-name": "contact", // Обов'язково вкажіть ім'я форми
+        "form-name": "contact",
       }).toString(),
     })
-      .then(() => {
-        setFormValues({ email: "", message: "" });
-        alert("Your message has been sent!");
+      .then((response) => {
+        if (response.ok) {
+          setFormValues({ email: "", message: "" });
+          alert("Your message has been sent!");
+        } else {
+          alert("Form submission failed. Please try again.");
+        }
       })
       .catch((error) => {
         console.error("Sending form failed", error);
