@@ -160,6 +160,7 @@ Responsive Design: Optimized for all devices (mobile, tablet, desktop).
         "React.js",
         "Redux Toolkit",
         "React Routes",
+        "TypeScript",
         "Telegram applications",
       ],
     },
