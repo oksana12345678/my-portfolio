@@ -13,6 +13,7 @@ import {
 import {
   ItAcademy,
   movieFinder,
+  phoneBook,
   portfolio,
   travel,
   water,
@@ -138,7 +139,40 @@ Responsive Design: Optimized for all devices (mobile, tablet, desktop).
         "React Routes",
       ],
     },
+    {
+      image: phoneBook,
+      name: "Phone Book",
+      webSite: "https://phone-book-kohl.vercel.app/",
+      Position: "Developer",
+      TeamSize: "Personal Project",
+      ProjectRepository: "https://github.com/oksana12345678/Phone-Book",
+      Responsibilities: `
+             Phone Book Web Application
 
+             The Phone Book is a user-friendly web application designed to manage personal or professional contacts efficiently. It allows users to perform essential contact management tasks, including:
+
+       Adding Contacts: Save new contacts with details like name, phone number, and email.
+       Editing Contacts: Update existing contact information to keep your phone book accurate and up-to-date.
+       Deleting Contacts: Remove unnecessary contacts to maintain an organized list.
+       Access and Security
+       To ensure the privacy and security of your data:
+
+       User Authentication: Logging in is mandatory to access the phone book.
+       Account Protection: Only authorized users can view, edit, or manage contacts.
+       Key Features
+       Fully responsive design for seamless usage across devices.
+       Intuitive and clean user interface for effortless navigation.
+       Robust backend integration to securely store and retrieve your contact data.
+       The Phone Book application is perfect for individuals and professionals seeking a reliable tool for managing their contacts in one secure and convenient place.
+  `,
+      KeyTechnologies: [
+        "JavaScript",
+        "React.js",
+        "Redux Toolkit",
+        "RESTful APIs",
+        "React Routes",
+      ],
+    },
     {
       image: ItAcademy,
       name: "IT Academy RPG (STARTUP)",
