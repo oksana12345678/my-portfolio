@@ -6,6 +6,7 @@ import {
   ArrowIconNext,
   ButtonNext,
   ContainerSliderItem,
+  SwiperSlideItem,
   SwiperWrapper,
 } from "./Skills.styled";
 import { useEffect, useRef, useState } from "react";
@@ -70,7 +71,7 @@ const Skills = () => {
         {SKILLS.map((skill, index) => (
           <SwiperSlide key={index}>
             <ContainerSliderItem $isHighlighted={index === activeIndex}>
-              <p className="swiper-slide-item-text">{skill}</p>
+              <SwiperSlideItem>{skill}</SwiperSlideItem>
             </ContainerSliderItem>
           </SwiperSlide>
         ))}

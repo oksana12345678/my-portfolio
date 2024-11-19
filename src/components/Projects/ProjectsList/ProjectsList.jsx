@@ -11,7 +11,7 @@ import {
   SwiperItem,
 } from "./ProjectsList.styled";
 import {
-  ItAcademy,
+  // ItAcademy,
   movieFinder,
   phoneBook,
   portfolio,
@@ -170,31 +170,31 @@ Responsive Design: Optimized for all devices (mobile, tablet, desktop).
         "React Routes",
       ],
     },
-    {
-      image: ItAcademy,
-      name: "IT Academy RPG (STARTUP)",
-      webSite: "https://t.me/IAR_test_bot",
-      Position: "Front-end Developer",
-      TeamSize: "12 Developers",
-      Responsibilities: `The IT Academy Telegram app is a learning platform designed 
-      to teach programming and IT skills interactively. Combining educational content
-      with gamified elements, it offers users a choice of career paths—such as
-      frontend developer, backend developer, or designer—and provides quests, challenges,
-       and quizzes tailored to each role. The app aims to engage users in skill-building
-       exercises while keeping track of progress, awarding points, and offering badges.
-        It is an ideal resource for both beginners and professionals looking to enhance
-        their skills or pivot within the tech industry.
-  `,
-      KeyTechnologies: [
-        "Tailwind",
-        "RTK Query",
-        "React.js",
-        "Redux Toolkit",
-        "React Routes",
-        "TypeScript",
-        "Telegram applications",
-      ],
-    },
+    //   {
+    //     image: ItAcademy,
+    //     name: "IT Academy RPG (STARTUP)",
+    //     webSite: "https://t.me/IAR_test_bot",
+    //     Position: "Front-end Developer",
+    //     TeamSize: "12 Developers",
+    //     Responsibilities: `The IT Academy Telegram app is a learning platform designed
+    //     to teach programming and IT skills interactively. Combining educational content
+    //     with gamified elements, it offers users a choice of career paths—such as
+    //     frontend developer, backend developer, or designer—and provides quests, challenges,
+    //      and quizzes tailored to each role. The app aims to engage users in skill-building
+    //      exercises while keeping track of progress, awarding points, and offering badges.
+    //       It is an ideal resource for both beginners and professionals looking to enhance
+    //       their skills or pivot within the tech industry.
+    // `,
+    //     KeyTechnologies: [
+    //       "Tailwind",
+    //       "RTK Query",
+    //       "React.js",
+    //       "Redux Toolkit",
+    //       "React Routes",
+    //       "TypeScript",
+    //       "Telegram applications",
+    //     ],
+    //   },
   ];
 
   return (

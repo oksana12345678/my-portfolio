@@ -86,3 +86,14 @@ export const ArrowIconNext = styled(IoArrowForwardOutline)`
     height: 60px;
   }
 `;
+
+export const SwiperSlideItem = styled.p`
+  @media screen and (min-width: 320px) {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    text-align: center;
+  }
+
+  /* @media screen and (min-width: 768px) {
+  } */
+`;
