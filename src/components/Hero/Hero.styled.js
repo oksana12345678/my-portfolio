@@ -46,12 +46,16 @@ export const MainHeroContainer = styled.div`
 export const Title = styled.h1`
   @media screen and (min-width: 320px) {
     font-weight: 500;
-    font-size: 32px;
+    font-size: 30px;
     color: var(--text-primary-color);
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    align-items: flex-start;
+    width: 100%;
   }
 
   @media screen and (min-width: 768px) {
-    font-weight: 500;
     font-size: 45px;
   }
 

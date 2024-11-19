@@ -15,14 +15,14 @@
 
   --main-bg: #1c1d20;
 
-  --text-primary-color: #213547;
-  --bg-button-color: linear-gradient(rgba(237, 59, 68, 1), #1c1d20);
-  --bg-button-color: linear-gradient(rgba(237, 59, 68, 1), #1c1d20);
+  --text-primary-color: #273f54;
+  --bg-button-color: linear-gradient(rgb(97, 159, 218), rgb(207, 226, 241));
 
   --bg-hover-color: rgb(252, 70, 79, 0.7);
 
   --light-text-color: #fbfbfb;
-  --accent-color: rgba(237, 59, 68, 1);
+  --hover-buttons-blu: rgb(207, 226, 241);
+  --accent-color: rgb(97, 159, 218);
   --accent-color-light-hover: rgba(255, 88, 96, 0.8);
 
   --grey-text-color: rgba(250, 250, 250, 0.6);
@@ -31,8 +31,6 @@
   --error-color: #e74a3b;
 
   --success-green-color: #3cbc81;
-
-  /* --link-color: */
 
   background-color: var(--main-bg);
 }

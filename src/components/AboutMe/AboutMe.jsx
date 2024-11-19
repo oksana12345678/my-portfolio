@@ -19,11 +19,9 @@ const AboutMe = () => {
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
-        // Якщо елемент входить в зону видимості
         if (entry.isIntersecting) {
           setIsVisible(true);
         } else {
-          // Якщо елемент виходить з зони видимості, скидаємо анімацію
           setIsVisible(false);
         }
       },

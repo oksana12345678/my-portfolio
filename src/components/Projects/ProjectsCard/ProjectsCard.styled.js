@@ -9,10 +9,12 @@ export const ContainerDesc = styled.div`
     gap: 8px;
     height: 100%;
     justify-content: end;
+    color: var(--text-primary-color);
   }
 
   @media screen and (min-width: 768px) {
     flex-direction: row;
+    gap: 16px;
   }
 `;
 
@@ -46,7 +48,7 @@ export const LinksStyled = styled.a`
     font-weight: 500;
     font-size: 16px;
     letter-spacing: -0.02em;
-    border: 1px solid var(--grey-secondary-color);
+    border: 1px solid var(--grey-text-color);
     border-radius: 16px;
     transition: all 400ms ease-in-out;
     padding: 4px;

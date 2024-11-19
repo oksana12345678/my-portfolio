@@ -115,7 +115,7 @@ export const DescAboutMe = styled.div`
   font-weight: 500;
   font-size: 16px;
   text-transform: uppercase;
-  color: var(--grey-text-color);
+  color: var(--text-primary-color);
   padding: 16px;
 
   @media screen and (min-width: 768px) {

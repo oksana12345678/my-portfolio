@@ -14,7 +14,9 @@ const Hero = () => {
     <>
       <HeroBG>
         <MainHeroContainer>
-          <Title>Hello. I’m Front-end developer Oksana Tanashchuk.</Title>
+          <Title>
+            Hello. I’m Front-end developer <span>Oksana Tanashchuk</span>
+          </Title>
           <SocialMedia>
             <SocialMediaList>
               <li>

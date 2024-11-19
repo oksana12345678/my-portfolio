@@ -8,6 +8,7 @@ import {
   FooterTitleSecondPart,
   FooterTitleSpan,
   StyledField,
+  StyledFieldContainer,
   SubmitButton,
 } from "./Footer.styled";
 import meSrc from "../../assets/front.png";
@@ -76,9 +77,9 @@ const Footer = () => {
       <FooterTitle>
         <FooterTitleSpan>
           <FooterTitleImg src={meSrc} alt="My Picture" />
-          Let’s work
+          Let’s<FooterTitleSecondPart>work</FooterTitleSecondPart>
         </FooterTitleSpan>
-        <FooterTitleSecondPart>together</FooterTitleSecondPart>
+        together
       </FooterTitle>
       <p>Contact me</p>
 
@@ -97,27 +98,35 @@ const Footer = () => {
           </label>
         </p>
 
-        <StyledField
-          type="email"
-          name="email"
-          placeholder="Enter your email"
-          onChange={handleChange}
-          value={formValues.email}
-          $isError={errors.email}
-        />
-        {errors.email && <ErrorMessageStyle>{errors.email}</ErrorMessageStyle>}
+        <StyledFieldContainer>
+          <div>
+            <StyledField
+              type="email"
+              name="email"
+              placeholder="Enter your email"
+              onChange={handleChange}
+              value={formValues.email}
+              $isError={errors.email}
+            />
+            {errors.email && (
+              <ErrorMessageStyle>{errors.email}</ErrorMessageStyle>
+            )}
+          </div>
 
-        <StyledField
-          as="textarea"
-          name="message"
-          placeholder="Enter your message"
-          onChange={handleChange}
-          value={formValues.message}
-          $isError={errors.message}
-        />
-        {errors.message && (
-          <ErrorMessageStyle>{errors.message}</ErrorMessageStyle>
-        )}
+          <div>
+            <StyledField
+              as="textarea"
+              name="message"
+              placeholder="Enter your message"
+              onChange={handleChange}
+              value={formValues.message}
+              $isError={errors.message}
+            />
+            {errors.message && (
+              <ErrorMessageStyle>{errors.message}</ErrorMessageStyle>
+            )}
+          </div>
+        </StyledFieldContainer>
 
         <SubmitButton type="submit" disabled={isSubmitting}>
           {isSubmitting ? "Sending..." : "Send"}

@@ -53,6 +53,8 @@ export const ContainerSliderItem = styled.div`
       $isHighlighted ? "var(--bg-button-color)" : "transparent"};
     border: ${({ $isHighlighted }) =>
       $isHighlighted ? "none" : "1px solid var(--grey-secondary-color)"};
+    color: ${({ $isHighlighted }) =>
+      $isHighlighted ? "var(--text-primary-color)" : "var(--light-text-color)"};
 
     transition: background-color 0.3s ease;
   }
@@ -92,6 +94,8 @@ export const SwiperSlideItem = styled.p`
     text-overflow: ellipsis;
     overflow: hidden;
     text-align: center;
+    font-size: 20px;
+    font-weight: 500;
   }
 
   /* @media screen and (min-width: 768px) {
