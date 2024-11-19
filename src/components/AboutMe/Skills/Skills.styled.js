@@ -79,7 +79,8 @@ export const ArrowIconNext = styled(IoArrowForwardOutline)`
     cursor: pointer;
 
     &:hover {
-      color: var(--accent-color-light-hover);
+      filter: drop-shadow(0 4px 15px var(--accent-color-light-hover))
+        drop-shadow(0 0 25px var(--accent-color-light-hover));
     }
   }
 
@@ -96,6 +97,7 @@ export const SwiperSlideItem = styled.p`
     text-align: center;
     font-size: 20px;
     font-weight: 500;
+    padding: 4px;
   }
 
   /* @media screen and (min-width: 768px) {
