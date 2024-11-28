@@ -11,6 +11,7 @@ import {
   SwiperItem,
 } from "./ProjectsList.styled";
 import {
+  farm,
   ItAcademy,
   movieFinder,
   phoneBook,
@@ -194,6 +195,16 @@ Responsive Design: Optimized for all devices (mobile, tablet, desktop).
         "TypeScript",
         "Telegram applications",
       ],
+    },
+    {
+      image: farm,
+      name: "Farm Sort Puzzle",
+      webSite: "https://roksana-st.github.io/evoplay3/",
+      Position: "Front-end Developer",
+      TeamSize: "2 Developers",
+      ProjectRepository: "https://github.com/Roksana-St/evoplay3",
+      Responsibilities: `lending page for evoplay company`,
+      KeyTechnologies: ["HTML", "SCSS", "Vite"],
     },
   ];
 

@@ -4,6 +4,7 @@ import water from "./water.png";
 import movieFinder from "./movieFinder.png";
 import portfolio from "./portfolio.png";
 import phoneBook from "./phoneBook.png";
+import farm from "./farm.png";
 
 import ItAcademy from "./ItAcademy.png";
 
@@ -15,4 +16,5 @@ export {
   portfolio,
   ItAcademy,
   phoneBook,
+  farm,
 };
