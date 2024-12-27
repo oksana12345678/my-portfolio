@@ -11,6 +11,8 @@ import {
   SwiperItem,
 } from "./ProjectsList.styled";
 import {
+  backendPB,
+  cookingStorm,
   farm,
   ItAcademy,
   movieFinder,
@@ -203,6 +205,42 @@ Responsive Design: Optimized for all devices (mobile, tablet, desktop).
       Position: "Front-end Developer",
       TeamSize: "2 Developers",
       ProjectRepository: "https://github.com/Roksana-St/evoplay3",
+      Responsibilities: `lending page for evoplay company`,
+      KeyTechnologies: ["HTML", "SCSS", "Vite"],
+    },
+
+    {
+      image: backendPB,
+      name: "Phone Book Backend",
+      webSite: "https://validation-5dsv.onrender.com/api-docs/",
+      Position: "Backend Developer",
+      TeamSize: "Developer",
+      ProjectRepository: "https://github.com/oksana12345678/contactsBackendJS",
+      Responsibilities: `Development of a backend for the "Phone Book" web application, allowing users to register, 
+      add, edit and delete contacts, and upload avatars. The system provides secure password storage,
+       file processing, data validation, and integration with cloud services for working with images.`,
+      KeyTechnologies: [
+        "Node.js",
+        "Express",
+        "Swagger",
+        "Cloudinary",
+        "Crypto",
+        "Joi",
+        "Mongodb",
+        "Mongoose",
+        "Multer",
+        "Bcrypt",
+      ],
+    },
+
+    {
+      image: cookingStorm,
+      name: "Cooking Storm",
+      webSite: "https://oksana12345678.github.io/evoplay_cooking_storm/",
+      Position: "Front-end Developer",
+      TeamSize: "2 Developers",
+      ProjectRepository:
+        "https://github.com/oksana12345678/evoplay_cooking_storm",
       Responsibilities: `lending page for evoplay company`,
       KeyTechnologies: ["HTML", "SCSS", "Vite"],
     },

@@ -1,85 +1,84 @@
-import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
-import "swiper/css/navigation";
-import { Navigation } from "swiper/modules";
+import { useEffect, useRef } from "react";
+// Імпортуйте StackIcon з бібліотеки
+import StackIcon from "tech-stack-icons";
 import {
-  ArrowIconNext,
-  ButtonNext,
-  ContainerSliderItem,
-  SwiperSlideItem,
-  SwiperWrapper,
+  IconWrapper,
+  SliderContainer,
+  SliderItem,
+  SliderWrapper,
 } from "./Skills.styled";
-import { useEffect, useRef, useState } from "react";
+import { FaTelegramPlane } from "react-icons/fa";
+import { SiStyledcomponents } from "react-icons/si";
 
 const Skills = () => {
-  const swiperRef = useRef(null);
+  const containerRef = useRef(null);
 
-  const [activeIndex, setActiveIndex] = useState(0);
-
+  // Список навичок з іконками
   const SKILLS = [
-    "HTML/CSS",
-    "JavaScript",
-    "React",
-    "Node.js",
-    "React Router",
-    "Git",
-    "Express",
-    "Redux",
-    "Redux Toolkit",
-    "TypeScript",
-    "Swagger",
-    "MongoDB",
-    "Mongoose",
-    "RESTful API",
-    "Tailwind",
-    "RTK Query",
-    "Styled component",
-    "Telegram applications",
-    "Vite",
-    "Polish",
-    "English",
+    { name: "HTML", icon: <StackIcon name="html5" /> },
+    { name: "CSS", icon: <StackIcon name="css3" /> },
+    { name: "SCSS", icon: <StackIcon name="sass" /> },
+    { name: "JavaScript", icon: <StackIcon name="js" /> },
+    { name: "React", icon: <StackIcon name="reactjs" /> },
+    { name: "Node.js", icon: <StackIcon name="nodejs" /> },
+    { name: "React Router", icon: <StackIcon name="reactrouter" /> },
+    { name: "Git", icon: <StackIcon name="git" /> },
+    { name: "Express", icon: <StackIcon name="express" /> },
+    { name: "Redux", icon: <StackIcon name="redux" /> },
+    {
+      name: "Styled Components",
+      icon: <SiStyledcomponents style={{ width: 100, height: 100 }} />,
+    },
+    { name: "TypeScript", icon: <StackIcon name="typescript" /> },
+    { name: "Swagger", icon: <StackIcon name="swagger" /> },
+    { name: "MongoDB", icon: <StackIcon name="mongodb" /> },
+    { name: "Mongoose", icon: <StackIcon name="mongoose" /> },
+    { name: "RESTful API", icon: <StackIcon name="restapi" /> },
+    { name: "Tailwind", icon: <StackIcon name="tailwindcss" /> },
+
+    {
+      name: "Telegram Applications",
+      icon: (
+        <FaTelegramPlane style={{ width: 100, height: 100 }} color="white" />
+      ),
+    },
+    { name: "Vite", icon: <StackIcon name="vitejs" /> },
   ];
 
+  // Подвоєний список навичок для нескінченного прокручування
+  const duplicatedSkills = [...SKILLS, ...SKILLS];
+
   useEffect(() => {
-    if (swiperRef.current) {
-      swiperRef.current.on("realIndexChange", () => {
-        setActiveIndex(swiperRef.current.realIndex);
-      });
-    }
+    const wrapper = containerRef.current;
+    let scrollAmount = 0;
+
+    const scroll = () => {
+      if (wrapper) {
+        scrollAmount += 1;
+        wrapper.style.transform = `translateX(-${scrollAmount}px)`;
+
+        if (scrollAmount >= wrapper.scrollWidth / 2) {
+          scrollAmount = 0;
+          wrapper.style.transform = `translateX(0)`;
+        }
+      }
+    };
+
+    const interval = setInterval(scroll, 20);
+    return () => clearInterval(interval);
   }, []);
 
   return (
-    <SwiperWrapper>
-      <Swiper
-        onSwiper={(swiper) => (swiperRef.current = swiper)}
-        navigation={{
-          nextEl: ".custom-next",
-          prevEl: ".custom-prev",
-        }}
-        modules={[Navigation]}
-        loop={true}
-        breakpoints={{
-          320: {
-            slidesPerView: 2,
-          },
-          640: { slidesPerView: 3 },
-          768: { slidesPerView: 3 },
-          1024: { slidesPerView: 4 },
-          1440: { slidesPerView: 6 },
-        }}
-      >
-        {SKILLS.map((skill, index) => (
-          <SwiperSlide key={index}>
-            <ContainerSliderItem $isHighlighted={index === activeIndex}>
-              <SwiperSlideItem>{skill}</SwiperSlideItem>
-            </ContainerSliderItem>
-          </SwiperSlide>
+    <SliderContainer>
+      <SliderWrapper ref={containerRef}>
+        {duplicatedSkills.map((skill, index) => (
+          <SliderItem key={index}>
+            <IconWrapper>{skill.icon}</IconWrapper>
+            {skill.name}
+          </SliderItem>
         ))}
-      </Swiper>
-      <ButtonNext onClick={() => swiperRef.current?.slideNext()}>
-        <ArrowIconNext />
-      </ButtonNext>
-    </SwiperWrapper>
+      </SliderWrapper>
+    </SliderContainer>
   );
 };
 

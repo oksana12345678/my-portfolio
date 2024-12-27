@@ -7,7 +7,7 @@ import {
   MainContainer,
 } from "./Header.styled";
 
-import logo from "/logo.webp";
+import logo from "/logo.png";
 
 const Header = () => {
   return (

@@ -15,6 +15,8 @@ export const SwiperItem = styled.div`
     background: var(--bg-button-color);
     border-radius: 16px;
     min-width: 704px;
+    max-width: 1152px;
+
     height: 600px;
     margin: 0 auto;
   }

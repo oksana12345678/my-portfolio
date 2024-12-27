@@ -6,7 +6,7 @@ import { PiTelegramLogoLight } from "react-icons/pi";
 
 export const HeroBG = styled.section`
   @media screen and (min-width: 320px) {
-    background-image: url(${bgImage});
+    /* background-image: url(${bgImage}); */
     background-repeat: no-repeat;
     background-size: cover;
     height: calc(100vh - 10px);
@@ -47,7 +47,7 @@ export const Title = styled.h1`
   @media screen and (min-width: 320px) {
     font-weight: 500;
     font-size: 30px;
-    color: var(--text-primary-color);
+    color: var(--light-text-color);
     display: flex;
     flex-direction: column;
     text-align: start;
@@ -82,7 +82,7 @@ export const Icons = styled(SlSocialLinkedin)`
   @media screen and (min-width: 320px) {
     width: 26px;
     height: 26px;
-    color: var(--text-primary-color);
+    color: var(--hover-buttons-blu);
     transition: color 0.4s ease-in-out, filter 0.4s ease-in-out;
 
     &:hover {
@@ -102,7 +102,7 @@ export const IconsGit = styled(VscGithubAlt)`
   @media screen and (min-width: 320px) {
     width: 26px;
     height: 26px;
-    color: var(--text-primary-color);
+    color: var(--hover-buttons-blu);
     transition: color 0.4s ease-in-out, filter 0.4s ease-in-out;
 
     &:hover {
@@ -122,7 +122,7 @@ export const IconsTelegram = styled(PiTelegramLogoLight)`
   @media screen and (min-width: 320px) {
     width: 26px;
     height: 26px;
-    color: var(--text-primary-color);
+    color: var(--hover-buttons-blu);
     transition: color 0.4s ease-in-out, filter 0.4s ease-in-out;
 
     &:hover {

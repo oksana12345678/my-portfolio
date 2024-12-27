@@ -14,7 +14,8 @@ export const ContainerDesc = styled.div`
 
   @media screen and (min-width: 768px) {
     flex-direction: row;
-    gap: 16px;
+    gap: 24px;
+    padding: 32px;
   }
 `;
 
@@ -104,10 +105,12 @@ export const LongDescContainer = styled.div`
   @media screen and (min-width: 320px) {
     height: 90px;
     overflow: scroll;
+    width: 140px;
   }
 
   @media screen and (min-width: 768px) {
     height: 140px;
+    width: 600px;
   }
 `;
 
@@ -125,7 +128,7 @@ export const ImageContainer = styled.div`
 export const PortfolioImage = styled.img`
   @media screen and (min-width: 320px) {
     width: 100%;
-    object-fit: cover;
+    object-fit: contain;
     border-radius: 16px;
     height: 164px;
   }

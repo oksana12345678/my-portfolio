@@ -5,7 +5,8 @@ import movieFinder from "./movieFinder.png";
 import portfolio from "./portfolio.png";
 import phoneBook from "./phoneBook.png";
 import farm from "./farm.png";
-
+import backendPB from "./backendPB.png";
+import cookingStorm from "./cookingStorm.png";
 import ItAcademy from "./ItAcademy.png";
 
 export {
@@ -17,4 +18,6 @@ export {
   ItAcademy,
   phoneBook,
   farm,
+  backendPB,
+  cookingStorm,
 };
