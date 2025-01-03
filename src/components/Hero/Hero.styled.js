@@ -1,12 +1,12 @@
 import styled from "styled-components";
-import bgImage from "../../assets/Lovepik_com-500371101-colorful-dazzling-banner.webp";
+import bgImage from "../../assets/abstract-blue-background-with-dynamic-shape.jpg";
 import { SlSocialLinkedin } from "react-icons/sl";
 import { VscGithubAlt } from "react-icons/vsc";
 import { PiTelegramLogoLight } from "react-icons/pi";
 
 export const HeroBG = styled.section`
   @media screen and (min-width: 320px) {
-    /* background-image: url(${bgImage}); */
+    background-image: var(--bg-color), url(${bgImage});
     background-repeat: no-repeat;
     background-size: cover;
     height: calc(100vh - 10px);
@@ -47,7 +47,7 @@ export const Title = styled.h1`
   @media screen and (min-width: 320px) {
     font-weight: 500;
     font-size: 30px;
-    color: var(--light-text-color);
+    color: var(--text-primary-color);
     display: flex;
     flex-direction: column;
     text-align: start;
@@ -82,13 +82,13 @@ export const Icons = styled(SlSocialLinkedin)`
   @media screen and (min-width: 320px) {
     width: 26px;
     height: 26px;
-    color: var(--hover-buttons-blu);
+    color: var(--accent-color);
     transition: color 0.4s ease-in-out, filter 0.4s ease-in-out;
 
     &:hover {
-      color: var(--accent-color-light-hover);
-      filter: drop-shadow(0 4px 15px var(--accent-color-light-hover))
-        drop-shadow(0 0 25px var(--accent-color-light-hover));
+      /* color: var(--accent-color-light-hover); */
+      filter: drop-shadow(0 4px 15px var(--error-color))
+        drop-shadow(0 0 25px var(--error-color));
     }
   }
 
@@ -102,13 +102,13 @@ export const IconsGit = styled(VscGithubAlt)`
   @media screen and (min-width: 320px) {
     width: 26px;
     height: 26px;
-    color: var(--hover-buttons-blu);
+    color: var(--accent-color);
     transition: color 0.4s ease-in-out, filter 0.4s ease-in-out;
 
     &:hover {
-      color: var(--accent-color-light-hover);
-      filter: drop-shadow(0 4px 15px var(--accent-color-light-hover))
-        drop-shadow(0 0 25px var(--accent-color-light-hover));
+      /* color: var(--accent-color-light-hover); */
+      filter: drop-shadow(0 4px 15px var(--error-color))
+        drop-shadow(0 0 25px var(--error-color));
     }
   }
 
@@ -122,13 +122,13 @@ export const IconsTelegram = styled(PiTelegramLogoLight)`
   @media screen and (min-width: 320px) {
     width: 26px;
     height: 26px;
-    color: var(--hover-buttons-blu);
+    color: var(--accent-color);
     transition: color 0.4s ease-in-out, filter 0.4s ease-in-out;
 
     &:hover {
-      color: var(--accent-color-light-hover);
-      filter: drop-shadow(0 4px 15px var(--accent-color-light-hover))
-        drop-shadow(0 0 25px var(--accent-color-light-hover));
+      /* color: var(--accent-color-light-hover); */
+      filter: drop-shadow(0 4px 15px var(--error-color))
+        drop-shadow(0 0 25px var(--error-color));
     }
   }
 
