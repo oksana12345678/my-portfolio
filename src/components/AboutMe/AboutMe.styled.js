@@ -1,5 +1,5 @@
 import styled, { keyframes, css } from "styled-components";
-// Keyframe animation for fading in
+
 export const fadeIn = keyframes`
   from {
     opacity: 0;
@@ -33,7 +33,6 @@ export const slideInRight = keyframes`
   }
 `;
 
-// Main section for the About Me component
 export const AboutMeSection = styled.section`
   padding: 80px 0;
   display: flex;
@@ -41,7 +40,6 @@ export const AboutMeSection = styled.section`
   gap: 64px;
 `;
 
-// Main container for the About Me section with animation
 export const MainContainerAboutMe = styled.div`
   display: flex;
   flex-direction: column;
@@ -60,7 +58,6 @@ export const MainContainerAboutMe = styled.div`
   }
 `;
 
-// Container for the description with responsive layout
 export const ContainerAboutMe = styled.div`
   display: flex;
   flex-direction: column;
@@ -72,7 +69,6 @@ export const ContainerAboutMe = styled.div`
   }
 `;
 
-// Description container styling
 export const DescContainerAboutMeLeft = styled.div`
   background: var(--bg-button-color);
   border-radius: 16px;
@@ -110,7 +106,6 @@ export const DescContainerAboutMeRight = styled.div`
   }
 `;
 
-// Description text styling with animation
 export const DescAboutMe = styled.div`
   font-weight: 500;
   font-size: 16px;
@@ -124,7 +119,6 @@ export const DescAboutMe = styled.div`
   }
 `;
 
-// Image styling with animation
 export const Image = styled.img`
   width: 100%;
   border-radius: 16px;
