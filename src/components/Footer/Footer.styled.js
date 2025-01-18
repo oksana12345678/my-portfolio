@@ -73,6 +73,7 @@ export const FooterForm = styled.form`
 export const StyledFieldContainer = styled.div`
   @media screen and (min-width: 320px) {
     display: flex;
+    flex-direction: column;
     gap: 24px;
   }
 
