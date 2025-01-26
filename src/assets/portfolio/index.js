@@ -8,6 +8,7 @@ import farm from "./farm.png";
 import backendPB from "./backendPB.png";
 import cookingStorm from "./cookingStorm.png";
 import ItAcademy from "./ItAcademy.png";
+import crm from "./crm.png";
 
 export {
   yachtJet,
@@ -20,4 +21,5 @@ export {
   farm,
   backendPB,
   cookingStorm,
+  crm,
 };

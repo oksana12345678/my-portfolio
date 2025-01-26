@@ -63,7 +63,7 @@ export const FooterForm = styled.form`
     gap: 24px;
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 1200px) {
     flex-direction: row;
     align-items: center;
     gap: 84px;

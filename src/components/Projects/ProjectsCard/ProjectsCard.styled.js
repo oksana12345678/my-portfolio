@@ -105,12 +105,12 @@ export const LongDescContainer = styled.div`
   @media screen and (min-width: 320px) {
     height: 90px;
     overflow: scroll;
-    width: 140px;
+    min-width: 260px;
   }
 
   @media screen and (min-width: 768px) {
     height: 140px;
-    width: 600px;
+    min-width: 340px;
   }
 `;
 

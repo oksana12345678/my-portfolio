@@ -13,6 +13,7 @@ import {
 import {
   backendPB,
   cookingStorm,
+  crm,
   farm,
   ItAcademy,
   movieFinder,
@@ -243,6 +244,29 @@ Responsive Design: Optimized for all devices (mobile, tablet, desktop).
         "https://github.com/oksana12345678/evoplay_cooking_storm",
       Responsibilities: `lending page for evoplay company`,
       KeyTechnologies: ["HTML", "SCSS", "Vite"],
+    },
+    {
+      image: crm,
+      name: "CRM",
+      webSite: "https://crm-five-zeta.vercel.app/",
+      Position: "Developer",
+      TeamSize: "One Developer",
+      ProjectRepository: "https://github.com/oksana12345678/crm",
+      Responsibilities: `The project is likely aimed at building a CRM (Customer Relationship Management) system using modern React-based tools with an emphasis on fast development and scalability.
+Tech Stack:
+React for the UI layer.
+Next.js for SSR/SSG and API handling.
+React Query for efficient data fetching.
+Formik for form management.
+Tailwind CSS for styling.
+Focus: The project emphasizes developer productivity (via ESLint, Prettier, and TypeScript) and user experience (Headless UI and React Query).`,
+      KeyTechnologies: [
+        "Next.js",
+        "TypeScript",
+        "Tailwind CSS",
+        "Formik",
+        "React Query",
+      ],
     },
   ];
 
