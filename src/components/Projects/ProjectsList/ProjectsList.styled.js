@@ -9,8 +9,11 @@ export const SwiperItem = styled.div`
     margin: 0 auto;
     height: 642px;
     overflow: scroll;
-  }
+    display: flex;
+    align-items: center;
 
+    justify-content: center;
+  }
   @media screen and (min-width: 768px) {
     background: var(--bg-button-color);
     border-radius: 16px;

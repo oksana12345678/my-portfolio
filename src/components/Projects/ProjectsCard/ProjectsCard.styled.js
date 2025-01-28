@@ -40,13 +40,14 @@ export const NameStyled = styled.h3`
   }
 
   @media screen and (min-width: 768px) {
+    max-width: 280px;
   }
 `;
 
 export const LinksStyled = styled.a`
   @media screen and (min-width: 320px) {
     color: var(--light-text-color);
-    font-weight: 500;
+    font-weight: 400;
     font-size: 16px;
     letter-spacing: -0.02em;
     border: 1px solid var(--grey-text-color);
@@ -80,12 +81,12 @@ export const ListOfTechnology = styled.ul`
     flex-wrap: wrap;
     gap: 8px;
     align-items: center;
-    height: 96px;
+    max-height: 96px;
     overflow: auto;
   }
 
   @media screen and (min-width: 768px) {
-    height: 180px;
+    max-height: 180px;
   }
 `;
 
@@ -121,7 +122,7 @@ export const ImageContainer = styled.div`
   }
 
   @media screen and (min-width: 768px) {
-    width: 50%;
+    width: 60%;
   }
 `;
 
@@ -145,10 +146,11 @@ export const DescContainer = styled.div`
     display: flex;
     flex-direction: column;
     gap: 16px;
+    justify-content: center;
   }
 
   @media screen and (min-width: 768px) {
-    width: 50%;
+    width: 40%;
   }
 `;
 

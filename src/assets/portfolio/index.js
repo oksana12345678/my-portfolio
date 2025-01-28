@@ -9,6 +9,7 @@ import backendPB from "./backendPB.png";
 import cookingStorm from "./cookingStorm.png";
 import ItAcademy from "./ItAcademy.png";
 import crm from "./crm.png";
+import my_portfolio from "./my_portfolio.png";
 
 export {
   yachtJet,
@@ -22,4 +23,5 @@ export {
   backendPB,
   cookingStorm,
   crm,
+  my_portfolio,
 };
