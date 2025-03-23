@@ -54,7 +54,11 @@ const ProjectsCard = ({ project }) => {
         </TechnologyAndRepoContainer>
 
         <LongDescContainer>
-          <p>{project.Responsibilities}</p>
+          {project.Responsibilities &&
+            Array.isArray(project.Responsibilities) &&
+            project.Responsibilities.map((item, index) => (
+              <p key={index}>{item}</p>
+            ))}
         </LongDescContainer>
       </DescContainer>
     </ContainerDesc>

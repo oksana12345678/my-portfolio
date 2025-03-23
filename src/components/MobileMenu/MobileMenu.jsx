@@ -1,3 +1,5 @@
+import React from "react";
+
 import { useEffect, useState } from "react";
 import {
   BurgerButton,
@@ -32,7 +34,12 @@ const MobileMenu = () => {
 
   return (
     <MenuContainer>
-      <BurgerButton onClick={toggleMenu} className={isOpen ? "open" : ""}>
+      <BurgerButton
+        onClick={toggleMenu}
+        className={isOpen ? "open" : ""}
+        role="button"
+        aria-label="burger menu"
+      >
         <div></div>
         <div></div>
         <div></div>

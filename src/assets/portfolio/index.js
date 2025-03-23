@@ -10,6 +10,7 @@ import cookingStorm from "./cookingStorm.png";
 import ItAcademy from "./ItAcademy.png";
 import crm from "./crm.png";
 import my_portfolio from "./my_portfolio.png";
+import inHArmony from "./inHArmony.png";
 
 export {
   yachtJet,
@@ -24,4 +25,5 @@ export {
   cookingStorm,
   crm,
   my_portfolio,
+  inHArmony,
 };

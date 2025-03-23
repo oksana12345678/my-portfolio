@@ -8,6 +8,7 @@ import {
   cookingStorm,
   crm,
   farm,
+  inHArmony,
   ItAcademy,
   movieFinder,
   my_portfolio,
@@ -55,18 +56,59 @@ export const SKILLS = [
 
 export const PROJECTS = [
   {
+    image: inHArmony,
+    name: "inHarmony",
+    webSite: "https://inharmony.com.ua/ua",
+    Position: "Fullstack Developer",
+    TeamSize: "9 Developers",
+    Responsibilities: [
+      "In Harmony – A Project for a Charity",
+
+      "  In Harmony is a web project designed to support a charity dedicated to helping people in need. The platform was built with a focus on usability, performance, and modern web technologies to improve the experience for end users.",
+      "My role: Fullstack Developer ",
+
+      ` - Database integration: 
+    Designed and implemented the back-end logic and ensured seamless interaction between the back-end and the database. This included configuring MongoDB, developing schemas, and handling CRUD operations using Mongoose and Next.js API routes.  
+`,
+      ` - Front-end development: 
+    Designed the user interface (UI) using Next.js, creating responsive, dynamic, and accessible components. I also worked with Sass for styling and implemented i18next for multilingual support.  
+`,
+      ` - Fullstack features: 
+    Integrated server-side logic and client-side functionality in a single monorepo to optimize server-side rendering (SSR), static site generation (SSG), and data caching using React Query.  
+`,
+      ` - File upload and media management: 
+    Implemented file upload functionality using Multer and integrated Cloudinary for image storage, optimization, and delivery.  
+`,
+      `- Quality control: 
+    Ensured clean, maintainable code by configuring ESLint, Prettier, and Husky hooks for automated linting and formatting.  
+  `,
+    ],
+    KeyTechnologies: [
+      "Next.js",
+      "Sass",
+      "MongoDB",
+      "SSR",
+      "i18n",
+      "Multer",
+      "Cloudinary",
+      "Git for code control",
+    ],
+  },
+  {
     image: yachtJet,
     name: "YachtJet Website",
     webSite: "https://oksana12345678.github.io/YachtJet-/",
     Position: "Team Lead, Developer",
     TeamSize: "11 Developers",
     ProjectRepository: "https://github.com/oksana12345678/YachtJet-",
-    Responsibilities: `
+    Responsibilities: [
+      `
 Led a team of 11 developers in creating a website with 3 responsive breakpoints, ensuring an optimal user experience across devices.
 Managed code control and maintained technical organization, providing solutions to complex technical challenges throughout the project.
 Implemented JavaScript logic to meet functionality requirements as per the project specifications.
 Collaborated closely with designers and stakeholders to ensure the website adhered strictly to the provided layout and specifications.
 `,
+    ],
     KeyTechnologies: [
       "HTML",
       "CSS",
@@ -82,11 +124,11 @@ Collaborated closely with designers and stakeholders to ensure the website adher
     Position: "Developer",
     TeamSize: "10 Developers",
     ProjectRepository: "https://github.com/tina3008/project-group-3",
-    Responsibilities: `
+    Responsibilities: `[
 Developed a responsive section of the website, ensuring compatibility with 3 breakpoints for an optimal user experience across various devices.
 Integrated front-end components with the back-end, ensuring smooth data flow and display of dynamic content.
 Assisted team members in resolving technical issues during the development process, contributing to a more efficient workflow.
-Ensured the section adhered to the given layout and specifications as per project requirements.
+Ensured the section adhered to the given layout and specifications as per project requirements.]
 `,
     KeyTechnologies: [
       "HTML",
@@ -104,13 +146,15 @@ Ensured the section adhered to the given layout and specifications as per projec
     Position: "Developer",
     TeamSize: "Personal Project",
     ProjectRepository: "https://github.com/oksana12345678/MovieFinder",
-    Responsibilities: `
+    Responsibilities: [
+      `
 MovieFinder is a web application that enables users to search for movies, view detailed descriptions, see the cast, and read reviews. The homepage features the most popular movies currently trending.
 Features:
 Movie Search: Find movies by title with detailed descriptions.
 Cast & Reviews: View the cast list and user reviews for each movie.
 Popular Movies: The homepage showcases the most popular movies at the moment.
 Routing: Efficient navigation between pages using React Routes.`,
+    ],
     KeyTechnologies: [
       "React.js",
       "React Routes",
@@ -125,7 +169,8 @@ Routing: Efficient navigation between pages using React Routes.`,
     Position: "Team Lead",
     TeamSize: "13 Developers",
     ProjectRepository: "https://github.com/oksana12345678/StackBridge",
-    Responsibilities: `
+    Responsibilities: [
+      `
 Tracker of Water is a responsive web application designed to help users monitor their daily water intake. Users can register, set daily water goals, and track their progress. The app also provides monthly statistics to give users a detailed overview of their hydration habits. It is built to function seamlessly across devices with three breakpoints: 320px, 768px, and 1440px.
 Responsibilities:
 Led a team of 13 developers, overseeing code control and technical organization.
@@ -137,6 +182,7 @@ Daily Water Tracking: Track how much water is consumed each day.
 Monthly Statistics: View a detailed report of daily water intake over the course of a month.
 Responsive Design: Optimized for all devices (mobile, tablet, desktop).
 `,
+    ],
     KeyTechnologies: [
       "HTML",
       "CSS",
@@ -154,11 +200,13 @@ Responsive Design: Optimized for all devices (mobile, tablet, desktop).
     Position: "Developer",
     TeamSize: "Personal Project",
     ProjectRepository: "https://github.com/oksana12345678/TravelTrucks",
-    Responsibilities: `TravelTrucks is a web application designed for travel enthusiasts, offering a selection of campers and travel vehicles with filtering options for features like sleeping capacity, amenities, and vehicle type. Users can explore options based on their preferences and access detailed information about each option.,
+    Responsibilities: [
+      `TravelTrucks is a web application designed for travel enthusiasts, offering a selection of campers and travel vehicles with filtering options for features like sleeping capacity, amenities, and vehicle type. Users can explore options based on their preferences and access detailed information about each option.,
     - Developed dynamic search and filtering functionalities for campers by various features
     - Integrated RESTful APIs to fetch and display camper data in real time
     - Designed user-friendly navigation using React Routes for smooth page transitions
   `,
+    ],
     KeyTechnologies: [
       "HTML",
       "CSS",
@@ -176,7 +224,8 @@ Responsive Design: Optimized for all devices (mobile, tablet, desktop).
     Position: "Developer",
     TeamSize: "Personal Project",
     ProjectRepository: "https://github.com/oksana12345678/Phone-Book",
-    Responsibilities: `
+    Responsibilities: [
+      `
        Phone Book Web Application
        The Phone Book is a user-friendly web application designed to manage personal or professional contacts efficiently. It allows users to perform essential contact management tasks, including:
        Adding Contacts: Save new contacts with details like name, phone number, and email.
@@ -192,6 +241,7 @@ Responsive Design: Optimized for all devices (mobile, tablet, desktop).
        Robust backend integration to securely store and retrieve your contact data.
        The Phone Book application is perfect for individuals and professionals seeking a reliable tool for managing their contacts in one secure and convenient place.
   `,
+    ],
     KeyTechnologies: [
       "JavaScript",
       "React.js",
@@ -206,7 +256,8 @@ Responsive Design: Optimized for all devices (mobile, tablet, desktop).
     webSite: "https://t.me/IAR_test_bot",
     Position: "Front-end Developer",
     TeamSize: "12 Developers",
-    Responsibilities: `The IT Academy Telegram app is a learning platform designed
+    Responsibilities: [
+      `The IT Academy Telegram app is a learning platform designed
         to teach programming and IT skills interactively. Combining educational content
         with gamified elements, it offers users a choice of career paths—such as
         frontend developer, backend developer, or designer—and provides quests, challenges,
@@ -215,6 +266,7 @@ Responsive Design: Optimized for all devices (mobile, tablet, desktop).
           It is an ideal resource for both beginners and professionals looking to enhance
           their skills or pivot within the tech industry.
     `,
+    ],
     KeyTechnologies: [
       "Tailwind",
       "RTK Query",
@@ -232,7 +284,7 @@ Responsive Design: Optimized for all devices (mobile, tablet, desktop).
     Position: "Front-end Developer",
     TeamSize: "2 Developers",
     ProjectRepository: "https://github.com/Roksana-St/evoplay3",
-    Responsibilities: `lending page for evoplay company`,
+    Responsibilities: [`lending page for evoplay company`],
     KeyTechnologies: ["HTML", "SCSS", "Vite"],
   },
 
@@ -243,9 +295,11 @@ Responsive Design: Optimized for all devices (mobile, tablet, desktop).
     Position: "Backend Developer",
     TeamSize: "Developer",
     ProjectRepository: "https://github.com/oksana12345678/contactsBackendJS",
-    Responsibilities: `Development of a backend for the "Phone Book" web application, allowing users to register, 
+    Responsibilities: [
+      `Development of a backend for the "Phone Book" web application, allowing users to register, 
       add, edit and delete contacts, and upload avatars. The system provides secure password storage,
        file processing, data validation, and integration with cloud services for working with images.`,
+    ],
     KeyTechnologies: [
       "Node.js",
       "Express",
@@ -268,7 +322,7 @@ Responsive Design: Optimized for all devices (mobile, tablet, desktop).
     TeamSize: "2 Developers",
     ProjectRepository:
       "https://github.com/oksana12345678/evoplay_cooking_storm",
-    Responsibilities: `lending page for evoplay company`,
+    Responsibilities: [`lending page for evoplay company`],
     KeyTechnologies: ["HTML", "SCSS", "Vite"],
   },
   {
@@ -278,7 +332,8 @@ Responsive Design: Optimized for all devices (mobile, tablet, desktop).
     Position: "Developer",
     TeamSize: "One Developer",
     ProjectRepository: "https://github.com/oksana12345678/crm",
-    Responsibilities: `The project is likely aimed at building a CRM (Customer Relationship Management) system using modern React-based tools with an emphasis on fast development and scalability.
+    Responsibilities: [
+      `The project is likely aimed at building a CRM (Customer Relationship Management) system using modern React-based tools with an emphasis on fast development and scalability.
 Tech Stack:
 React for the UI layer.
 Next.js for SSR/SSG and API handling.
@@ -286,6 +341,7 @@ React Query for efficient data fetching.
 Formik for form management.
 Tailwind CSS for styling.
 Focus: The project emphasizes developer productivity (via ESLint, Prettier, and TypeScript) and user experience (Headless UI and React Query).`,
+    ],
     KeyTechnologies: [
       "Next.js",
       "TypeScript",
@@ -301,7 +357,9 @@ Focus: The project emphasizes developer productivity (via ESLint, Prettier, and 
     Position: "Developer",
     TeamSize: "One Developer",
     ProjectRepository: "https://github.com/oksana12345678/my-portfolio",
-    Responsibilities: `This project, My Portfolio, is a web application built with modern frontend technologies to showcase personal projects and skills in a clean, responsive, and interactive way.`,
+    Responsibilities: [
+      `This project, My Portfolio, is a web application built with modern frontend technologies to showcase personal projects and skills in a clean, responsive, and interactive way.`,
+    ],
     KeyTechnologies: [
       "React",
       "Swiper",
