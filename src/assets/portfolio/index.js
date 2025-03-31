@@ -11,6 +11,7 @@ import ItAcademy from "./ItAcademy.png";
 import crm from "./crm.png";
 import my_portfolio from "./my_portfolio.png";
 import inHArmony from "./inHArmony.png";
+import RPG from "./RPG.png";
 
 export {
   yachtJet,
@@ -26,4 +27,5 @@ export {
   crm,
   my_portfolio,
   inHArmony,
+  RPG,
 };

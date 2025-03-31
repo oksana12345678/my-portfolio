@@ -14,6 +14,7 @@ import {
   my_portfolio,
   phoneBook,
   portfolio,
+  RPG,
   travel,
   water,
   yachtJet,
@@ -58,7 +59,7 @@ export const PROJECTS = [
   {
     image: inHArmony,
     name: "inHarmony",
-    webSite: "https://inharmony.com.ua/ua",
+    webSite: "https://inharmony.com.ua/en",
     Position: "Fullstack Developer",
     TeamSize: "9 Developers",
     Responsibilities: [
@@ -94,6 +95,25 @@ export const PROJECTS = [
       "Git for code control",
     ],
   },
+  {
+    image: RPG,
+    name: "IT Academy RPG web-site",
+    webSite: "https://it-academy-rpg.vercel.app/en",
+    Position: "Developer",
+    TeamSize: "One Developer",
+    Responsibilities: [
+      `The IT Academy RPG Web-Site is a dynamic platform designed to present the IT Academy RPG project. Built with Next.js, the site leverages server-side rendering (SSR) to ensure fast load times and optimal performance.`,
+      `The website features multi-language support (i18n), making it accessible to a broader audience. Styled with Tailwind CSS, it offers a modern and responsive user experience. Git is used for version control, ensuring efficient code management.`,
+    ],
+    KeyTechnologies: [
+      "Next.js",
+      "Tailwind",
+      "SSR",
+      "i18n",
+      "Git for code control",
+    ],
+  },
+
   {
     image: yachtJet,
     name: "YachtJet Website",
