@@ -59,7 +59,7 @@ export const PROJECTS = [
   {
     image: inHArmony,
     name: "inHarmony",
-    webSite: "https://inharmony.com.ua/en",
+    webSite: "https://inharmony.com.ua",
     Position: "Fullstack Developer",
     TeamSize: "9 Developers",
     Responsibilities: [
