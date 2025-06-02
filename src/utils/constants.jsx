@@ -98,7 +98,7 @@ export const PROJECTS = [
   {
     image: RPG,
     name: "IT Academy RPG web-site",
-    webSite: "https://it-academy-rpg.vercel.app/en",
+    webSite: "https://it-academy-rpg.vercel.app",
     Position: "Developer",
     TeamSize: "One Developer",
     Responsibilities: [
@@ -117,7 +117,7 @@ export const PROJECTS = [
   {
     image: yachtJet,
     name: "YachtJet Website",
-    webSite: "https://oksana12345678.github.io/YachtJet-/",
+    webSite: "https://oksana12345678.github.io/YachtJet-",
     Position: "Team Lead, Developer",
     TeamSize: "11 Developers",
     ProjectRepository: "https://github.com/oksana12345678/YachtJet-",
@@ -140,7 +140,7 @@ Collaborated closely with designers and stakeholders to ensure the website adher
   {
     image: portfolio,
     name: "Portfolio Website",
-    webSite: "https://tina3008.github.io/project-group-3/",
+    webSite: "https://tina3008.github.io/project-group-3",
     Position: "Developer",
     TeamSize: "10 Developers",
     ProjectRepository: "https://github.com/tina3008/project-group-3",
@@ -162,7 +162,7 @@ Ensured the section adhered to the given layout and specifications as per projec
   {
     image: movieFinder,
     name: "MovieFinder",
-    webSite: "https://search-for-movies-and-view-description.vercel.app/",
+    webSite: "https://search-for-movies-and-view-description.vercel.app",
     Position: "Developer",
     TeamSize: "Personal Project",
     ProjectRepository: "https://github.com/oksana12345678/MovieFinder",
@@ -216,7 +216,7 @@ Responsive Design: Optimized for all devices (mobile, tablet, desktop).
   {
     image: travel,
     name: "TravelTrucks",
-    webSite: "https://travel-trucks-ten.vercel.app/",
+    webSite: "https://travel-trucks-ten.vercel.app",
     Position: "Developer",
     TeamSize: "Personal Project",
     ProjectRepository: "https://github.com/oksana12345678/TravelTrucks",
@@ -240,7 +240,7 @@ Responsive Design: Optimized for all devices (mobile, tablet, desktop).
   {
     image: phoneBook,
     name: "Phone Book",
-    webSite: "https://phone-book-kohl.vercel.app/",
+    webSite: "https://phone-book-kohl.vercel.app",
     Position: "Developer",
     TeamSize: "Personal Project",
     ProjectRepository: "https://github.com/oksana12345678/Phone-Book",
@@ -300,7 +300,7 @@ Responsive Design: Optimized for all devices (mobile, tablet, desktop).
   {
     image: farm,
     name: "Farm Sort Puzzle (commercial)",
-    webSite: "https://roksana-st.github.io/evoplay3/",
+    webSite: "https://roksana-st.github.io/evoplay3",
     Position: "Front-end Developer",
     TeamSize: "2 Developers",
     ProjectRepository: "https://github.com/Roksana-St/evoplay3",
@@ -311,7 +311,7 @@ Responsive Design: Optimized for all devices (mobile, tablet, desktop).
   {
     image: backendPB,
     name: "Phone Book Backend",
-    webSite: "https://validation-5dsv.onrender.com/api-docs/",
+    webSite: "https://validation-5dsv.onrender.com/api-docs",
     Position: "Backend Developer",
     TeamSize: "Developer",
     ProjectRepository: "https://github.com/oksana12345678/contactsBackendJS",
@@ -337,7 +337,7 @@ Responsive Design: Optimized for all devices (mobile, tablet, desktop).
   {
     image: cookingStorm,
     name: "Cooking Storm (commercial)",
-    webSite: "https://oksana12345678.github.io/evoplay_cooking_storm/",
+    webSite: "https://oksana12345678.github.io/evoplay_cooking_storm",
     Position: "Front-end Developer",
     TeamSize: "2 Developers",
     ProjectRepository:
@@ -373,7 +373,7 @@ Focus: The project emphasizes developer productivity (via ESLint, Prettier, and 
   {
     image: my_portfolio,
     name: "My Portfolio",
-    webSite: "https://oksana-tanashchuk-portfolio.netlify.app/",
+    webSite: "https://oksana-tanashchuk-portfolio.netlify.app",
     Position: "Developer",
     TeamSize: "One Developer",
     ProjectRepository: "https://github.com/oksana12345678/my-portfolio",
