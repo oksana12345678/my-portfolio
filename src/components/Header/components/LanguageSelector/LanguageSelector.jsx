@@ -9,7 +9,7 @@ import {
 } from "./LanguageSelector.styled";
 
 const LanguageSelector = ({ handleLanguageSelect }) => {
-  const [currentLang, setCurrentLang] = useState(LANGUAGES.UA);
+  const [currentLang, setCurrentLang] = useState(LANGUAGES.PL);
   const [open, setOpen] = useState(false);
 
   const languageFlags = {

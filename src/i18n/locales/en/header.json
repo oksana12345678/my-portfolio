@@ -1,7 +1,8 @@
+
 {
   "nav": {
-    "about": "про мене",
-    "projects": "проєкти",
-    "contact": "звʼяжіться зі мною"
+    "about": "about me",
+    "projects": "projects",
+    "contact": "contact me"
   }
 }
