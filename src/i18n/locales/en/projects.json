@@ -1,0 +1,330 @@
+{
+  "title": "Projects",
+
+  "inHarmony": {
+    "image": "inHarmony",
+    "name": "inHarmony",
+    "webSite": "https://inharmony.com.ua",
+    "Position": "Fullstack Developer",
+    "TeamSize": "9 developers",
+    "Responsibilities": [
+      "In Harmony – a charity project",
+      "In Harmony – a web project created to support a charitable organization that helps people in need. The platform is built with a focus on convenience, performance, and modern web technologies to improve the end-user experience.",
+      "My role: Fullstack Developer",
+      "- Database integration: Developed and implemented backend logic and ensured seamless interaction between the server and the database. This included configuring MongoDB, creating schemas, and handling CRUD operations using Mongoose and Next.js API routes.",
+      "- Frontend development: Created the user interface (UI) using Next.js, developing responsive, dynamic, and accessible components. Used Sass for styling and implemented i18next for multilingual support.",
+      "- Fullstack functions: Integrated server-side logic and client-side functions in a single monorepository to optimize SSR, SSG, and data caching using React Query.",
+      "- File and media upload: Implemented file upload functionality using Multer and integrated Cloudinary for storage, optimization, and delivery of images.",
+      "- Quality control: Ensured clean and maintainable code by configuring ESLint, Prettier, and Husky for automatic linting and formatting."
+    ],
+    "KeyTechnologies": [
+      "Next.js",
+      "Sass",
+      "MongoDB",
+      "SSR",
+      "i18n",
+      "Multer",
+      "Cloudinary",
+      "Git for code control"
+    ]
+  },
+  "photo_graph": {
+    "image": "photo_graph",
+    "name": "Grapher Shot.",
+    "webSite": "https://photo-gallery-react-iota.vercel.app",
+    "Position": "Developer",
+    "TeamSize": "Solo developer",
+    "Responsibilities": [
+      "Grapher Shot. – personal portfolio website for a photographer. The platform serves as a digital showcase of the photographer's work, provides information about services, and allows clients to book photo sessions.",
+      "Key features:",
+      "- Portfolio gallery: Ability to view high-quality photos.",
+      "- About the photographer section: Biography and experience information.",
+      "- Pricing page: Detailed price list for photography services.",
+      "- Booking system: Integration of calendar and forms for scheduling photo sessions.",
+      "- Responsive design: Optimized for mobile, tablet, and desktop."
+    ],
+    "KeyTechnologies": [
+      "React.js",
+      "React Router",
+      "Formik & Yup (forms and validation)",
+      "React Calendar / Datepicker",
+      "Axios",
+      "Swiper",
+      "CSS"
+    ]
+  },
+  "RPG": {
+    "image": "RPG",
+    "name": "IT Academy RPG web-site",
+    "webSite": "https://it-academy-rpg.vercel.app",
+    "Position": "Developer",
+    "TeamSize": "Solo developer",
+    "Responsibilities": [
+      "IT Academy RPG – a dynamic platform to showcase the IT Academy RPG project. Built with Next.js, using SSR for fast loading and optimal performance.",
+      "The site supports multilingual (i18n), making it accessible to a wider audience. Tailwind CSS is used for a modern and responsive interface. Git is applied for version control."
+    ],
+    "KeyTechnologies": [
+      "Next.js",
+      "Tailwind",
+      "SSR",
+      "i18n",
+      "Git for code control"
+    ]
+  },
+  "yachtJet": {
+    "image": "yachtJet",
+    "name": "YachtJet Website",
+    "webSite": "https://oksana12345678.github.io/YachtJet-",
+    "Position": "Team Lead, Developer",
+    "TeamSize": "11 Developers",
+    "ProjectRepository": "https://github.com/oksana12345678/YachtJet-",
+    "Responsibilities": [
+      "Led a team of 11 developers in creating a website with 3 responsive breakpoints for optimal user experience.",
+      "Code control and technical organization, solving complex technical tasks throughout the project.",
+      "Implemented JavaScript logic to meet functional requirements.",
+      "Close collaboration with designers and stakeholders to ensure precise layout and specifications."
+    ],
+    "KeyTechnologies": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Responsive design",
+      "Collaboration tools (e.g., Git for code control)"
+    ]
+  },
+  "portfolio": {
+    "image": "portfolio",
+    "name": "Portfolio Website",
+    "webSite": "https://tina3008.github.io/project-group-3",
+    "Position": "Developer",
+    "TeamSize": "10 Developers",
+    "ProjectRepository": "https://github.com/tina3008/project-group-3",
+    "Responsibilities": [
+      "Developed a responsive website section compatible with 3 breakpoints for optimal user experience.",
+      "Integrated frontend components with backend for smooth display of dynamic content.",
+      "Assisted team members in solving technical issues to increase efficiency.",
+      "Followed project layout and specifications."
+    ],
+    "KeyTechnologies": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Responsive design",
+      "Collaboration tools (e.g., Git for code control)"
+    ]
+  },
+  "movieFinder": {
+    "image": "movieFinder",
+    "name": "MovieFinder",
+    "webSite": "https://search-for-movies-and-view-description.vercel.app",
+    "Position": "Developer",
+    "TeamSize": "Personal project",
+    "ProjectRepository": "https://github.com/oksana12345678/MovieFinder",
+    "Responsibilities": [
+      "MovieFinder – a web app for searching movies, viewing descriptions, cast, and user reviews. The homepage displays the most popular movies.",
+      "Features:",
+      "- Movie search: by title with detailed description.",
+      "- Cast & reviews: view actor list and user reviews.",
+      "- Popular movies: homepage shows trending films.",
+      "- Routing: efficient navigation between pages using React Routes."
+    ],
+    "KeyTechnologies": [
+      "React.js",
+      "React Routes",
+      "JavaScript",
+      "CSS (styling)"
+    ]
+  },
+  "water": {
+    "image": "water",
+    "name": "Tracker of Water",
+    "webSite": "https://stack-bridge.vercel.app/welcome",
+    "Position": "Team Lead",
+    "TeamSize": "13 Developers",
+    "ProjectRepository": "https://github.com/oksana12345678/StackBridge",
+    "Responsibilities": [
+      "Tracker of Water – a responsive web app for tracking daily water intake. Users can register, set goals, and monitor progress. The app provides monthly statistics for detailed insights.",
+      "Responsibilities:",
+      "- Led a team of 13 developers, code control, and process organization.",
+      "- Solved technical issues and ensured smooth project execution.",
+      "- Used Redux Toolkit for state management and integrated with RESTful API.",
+      "Features:",
+      "- User registration: create accounts to personalize water tracking.",
+      "- Daily water tracking: record daily water intake.",
+      "- Monthly statistics: detailed monthly report.",
+      "- Responsive design: optimized for mobile, tablet, and desktop."
+    ],
+    "KeyTechnologies": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "React.js",
+      "Redux Toolkit",
+      "RESTful APIs",
+      "React Routes"
+    ]
+  },
+  "travel": {
+    "image": "travel",
+    "name": "TravelTrucks",
+    "webSite": "https://travel-trucks-ten.vercel.app",
+    "Position": "Developer",
+    "TeamSize": "Personal project",
+    "ProjectRepository": "https://github.com/oksana12345678/TravelTrucks",
+    "Responsibilities": [
+      "TravelTrucks – a web app for tourists to select campers and vehicles with filtering by features: number of beds, amenities, type of vehicle.",
+      "- Developed dynamic search and filtering of campers by various characteristics.",
+      "- Integrated RESTful API for real-time data.",
+      "- Smooth navigation using React Routes for seamless page transitions."
+    ],
+    "KeyTechnologies": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "React.js",
+      "Redux Toolkit",
+      "RESTful APIs",
+      "React Routes"
+    ]
+  },
+  "phoneBook": {
+    "image": "phoneBook",
+    "name": "Phone Book",
+    "webSite": "https://phone-book-kohl.vercel.app",
+    "Position": "Developer",
+    "TeamSize": "Personal project",
+    "ProjectRepository": "https://github.com/oksana12345678/Phone-Book",
+    "Responsibilities": [
+      "Phone Book – a convenient web app for managing personal or professional contacts.",
+      "Features:",
+      "- Add contacts: name, phone number, email.",
+      "- Edit contacts: update information.",
+      "- Delete contacts: maintain an organized list.",
+      "Access & Security:",
+      "- User authentication: login required to access.",
+      "- Account protection: only authorized users can view and edit.",
+      "Key features:",
+      "- Responsive design for all devices.",
+      "- Intuitive and clean interface.",
+      "- Reliable backend integration for secure storage and retrieval of contacts."
+    ],
+    "KeyTechnologies": [
+      "JavaScript",
+      "React.js",
+      "Redux Toolkit",
+      "RESTful APIs",
+      "React Routes"
+    ]
+  },
+  "itAcademy": {
+    "image": "ItAcademy",
+    "name": "IT Academy RPG",
+    "webSite": "https://t.me/tanoksa_bot",
+    "Position": "Front-end Developer",
+    "TeamSize": "12 Developers",
+    "Responsibilities": [
+      "IT Academy Telegram – an educational platform for interactive learning of programming and IT skills. Combines educational content with gamification elements, providing users with a career path choice (frontend, backend, designer) and tasks, challenges, and quizzes for each role. The app tracks progress, awards points, and provides badges."
+    ],
+    "KeyTechnologies": [
+      "Tailwind",
+      "RTK Query",
+      "React.js",
+      "Redux Toolkit",
+      "React Routes",
+      "TypeScript",
+      "Telegram applications"
+    ]
+  },
+  "farm": {
+    "image": "farm",
+    "name": "Farm Sort Puzzle (commercial)",
+    "webSite": "https://roksana-st.github.io/evoplay3",
+    "Position": "Front-end Developer",
+    "TeamSize": "2 Developers",
+    "ProjectRepository": "https://github.com/Roksana-St/evoplay3",
+    "Responsibilities": ["Landing page for Evoplay company"],
+    "KeyTechnologies": ["HTML", "SCSS", "Vite"]
+  },
+  "backendPB": {
+    "image": "backendPB",
+    "name": "Phone Book Backend",
+    "webSite": "https://validation-5dsv.onrender.com/api-docs",
+    "Position": "Backend Developer",
+    "TeamSize": "Developer",
+    "ProjectRepository": "https://github.com/oksana12345678/contactsBackendJS",
+    "Responsibilities": [
+      "Developed backend for Phone Book allowing registration, adding, editing, deleting contacts, and uploading avatars. Ensures secure password storage, file handling, data validation, and cloud service integration for image management."
+    ],
+    "KeyTechnologies": [
+      "Node.js",
+      "Express",
+      "Swagger",
+      "Cloudinary",
+      "Crypto",
+      "Joi",
+      "MongoDB",
+      "Mongoose",
+      "Multer",
+      "Bcrypt"
+    ]
+  },
+  "cookingStorm": {
+    "image": "cookingStorm",
+    "name": "Cooking Storm (commercial)",
+    "webSite": "https://oksana12345678.github.io/evoplay_cooking_storm",
+    "Position": "Front-end Developer",
+    "TeamSize": "2 Developers",
+    "ProjectRepository": "https://github.com/oksana12345678/evoplay_cooking_storm",
+    "Responsibilities": ["Landing page for Evoplay company"],
+    "KeyTechnologies": ["HTML", "SCSS", "Vite"]
+  },
+  "crm": {
+    "image": "crm",
+    "name": "CRM",
+    "webSite": "https://crm-five-zeta.vercel.app/",
+    "Position": "Developer",
+    "TeamSize": "Solo developer",
+    "ProjectRepository": "https://github.com/oksana12345678/crm",
+    "Responsibilities": [
+      "Project aimed at building a CRM system with modern React tools focusing on fast development and scalability.",
+      "Technologies:",
+      "- React for UI.",
+      "- Next.js for SSR/SSG and API.",
+      "- React Query for efficient data fetching.",
+      "- Formik for forms.",
+      "- Tailwind CSS for styling.",
+      "Focus: improving developer productivity and user convenience."
+    ],
+    "KeyTechnologies": [
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "Formik",
+      "React Query"
+    ]
+  },
+  "my_portfolio": {
+    "image": "my_portfolio",
+    "name": "My Portfolio",
+    "webSite": "https://oksana-tanashchuk-portfolio.netlify.app",
+    "Position": "Developer",
+    "TeamSize": "Solo developer",
+    "ProjectRepository": "https://github.com/oksana12345678/my-portfolio",
+    "Responsibilities": [
+      "My Portfolio – a web app to showcase personal projects and skills in a clean, responsive, and interactive way."
+    ],
+    "KeyTechnologies": [
+      "React",
+      "Swiper",
+      "Styled Components",
+      "React Icons & React Icon",
+      "Formik",
+      "Gulp"
+    ]
+  },
+  "visit_button": "Visit",
+  "position": "Position",
+  "team_size": "Team size",
+  "key_technologies": "Key technologies",
+  "project_repository": "Repository"
+}

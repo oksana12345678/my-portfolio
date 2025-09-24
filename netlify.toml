@@ -1,0 +1,8 @@
+[build]
+  publish = "dist" # вкажіть папку, де знаходиться ваш зібраний сайт (наприклад, "public" або "dist")
+
+[[redirects]]
+  from = "/contact"
+  to = "/"
+  status = 200
+  method = "POST"
