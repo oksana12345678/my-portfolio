@@ -1,9 +1,9 @@
-
 import { useEffect, useState } from "react";
 import { NAMESPACES } from "../../shared/constants";
 import initTranslations from "../../i18n/utils/i18n";
 import i18nConfig from "../../i18nConfig";
 import TranslationsProvider from "../../i18n/utils/TranslationsProvider";
+import Loader from "../Loader/Loader";
 
 function Root({ children }) {
   const [i18nData, setI18nData] = useState(null);
@@ -21,7 +21,7 @@ function Root({ children }) {
     loadTranslations();
   }, []);
 
-  if (!i18nData) return <div>Loading translations...</div>;
+  if (!i18nData) return <Loader />;
 
   return (
     <TranslationsProvider
