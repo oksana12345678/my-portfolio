@@ -94,7 +94,7 @@ export const ListOfTechnology = styled.ul`
 
 export const ListItemOfTechnology = styled.li`
   @media screen and (min-width: 320px) {
-    background-color: var(--grey-text-color);
+    background-color: var(--accent-color-light-hover);
     border-radius: 24px;
     padding: 10px;
     color: var(--text-primary-color);
