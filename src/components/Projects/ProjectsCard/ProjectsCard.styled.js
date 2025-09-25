@@ -37,6 +37,7 @@ export const NameStyled = styled.h3`
   @media screen and (min-width: 320px) {
     font-weight: 600;
     font-size: 24px;
+    text-align: center;
   }
 
   @media screen and (min-width: 768px) {
@@ -59,6 +60,9 @@ export const LinksStyled = styled.a`
     text-shadow: 0 4px 15px var(--accent-color-light-hover);
     box-shadow: 0 2px 12px var(--accent-color-light-hover),
       0 0 25px var(--accent-color-light-hover);
+    width: 100%;
+    max-width: 220px;
+    margin: 6px auto;
 
     &:hover {
       box-shadow: 0 6px 44px var(--accent-color-light-hover),
@@ -85,6 +89,7 @@ export const ListOfTechnology = styled.ul`
     align-items: center;
     max-height: 96px;
     overflow: auto;
+    justify-content: center;
   }
 
   @media screen and (min-width: 768px) {
@@ -109,6 +114,7 @@ export const LongDescContainer = styled.div`
     height: 90px;
     overflow: scroll;
     min-width: 260px;
+    text-align: center;
   }
 
   @media screen and (min-width: 768px) {
@@ -159,10 +165,18 @@ export const TechnologyAndRepoContainer = styled.div`
   @media screen and (min-width: 320px) {
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: 8px;
   }
 
   @media screen and (min-width: 768px) {
     gap: 12px;
   }
+`;
+
+export const ContainerWrapper = styled.div`
+  display: flex;
+  gap: 4px;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
 `;

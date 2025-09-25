@@ -14,13 +14,7 @@ import {
 import meSrc from "../../assets/fon.png";
 import showToast from "../showToast";
 import { useTranslation } from "react-i18next";
-import {
-  Icons,
-  IconsGit,
-  IconsTelegram,
-  SocialMedia,
-  SocialMediaList,
-} from "../Hero/Hero.styled";
+import SocialLinks from "../../shared/components/SocialLinks/SocialLinks";
 
 const Footer = () => {
   const [formValues, setFormValues] = useState({ email: "", message: "" });
@@ -85,7 +79,7 @@ const Footer = () => {
     <FooterContainer id="contacts">
       <FooterTitle>
         <FooterTitleSpan>
-          <FooterTitleImg src={meSrc} alt="My Picture" />
+          <FooterTitleImg src={meSrc} alt="Picture" />
           {t("first_word")}
           <FooterTitleSecondPart>{t("second_word")}</FooterTitleSecondPart>
         </FooterTitleSpan>
@@ -142,28 +136,7 @@ const Footer = () => {
           {isSubmitting ? "Sending..." : "Send"}
         </SubmitButton>
       </FooterForm>
-      <SocialMedia>
-        <SocialMediaList>
-          <li>
-            <a
-              href="https://www.linkedin.com/in/oksana-tanashchuk/"
-              target="blank"
-            >
-              <Icons />
-            </a>
-          </li>
-          <li>
-            <a href="https://github.com/oksana12345678" target="blank">
-              <IconsGit />
-            </a>
-          </li>
-          <li>
-            <a href="https://t.me/oksana_tanashchuk" target="blank">
-              <IconsTelegram />
-            </a>
-          </li>
-        </SocialMediaList>
-      </SocialMedia>
+      <SocialLinks content="center" />
     </FooterContainer>
   );
 };

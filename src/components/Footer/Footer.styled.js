@@ -4,9 +4,10 @@ export const FooterContainer = styled.div`
   @media screen and (min-width: 320px) {
     display: flex;
     flex-direction: column;
-    gap: 24px;
+    gap: 46px;
     padding: 0 16px;
     justify-content: center;
+    width: 100%;
   }
 
   @media screen and (min-width: 768px) {
@@ -21,7 +22,7 @@ export const FooterTitle = styled.h3`
     flex-direction: column;
     gap: 8px;
     font-weight: 500;
-    font-size: 20px;
+    font-size: 24px;
     text-transform: uppercase;
   }
 
@@ -65,10 +66,22 @@ export const FooterForm = styled.form`
     gap: 24px;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 768px) {
+    width: 390px;
+    margin: 0 auto;
+  }
+
+  @media screen and (min-width: 1024px) {
     flex-direction: row;
     align-items: center;
-    gap: 84px;
+    gap: 46px;
+    width: 100%;
+    margin: 0;
+  }
+
+  @media screen and (min-width: 1440px) {
+    width: 100%;
+    justify-content: center;
   }
 `;
 
@@ -78,7 +91,9 @@ export const StyledFieldContainer = styled.div`
     flex-direction: column;
     gap: 24px;
   }
-
+  div {
+    height: 100%;
+  }
   @media screen and (min-width: 768px) {
     align-items: center;
     gap: 32px;
@@ -87,6 +102,7 @@ export const StyledFieldContainer = styled.div`
   @media screen and (min-width: 1024px) {
     align-items: center;
     flex-direction: row;
+    height: 44px;
 
     gap: 32px;
   }
@@ -99,7 +115,7 @@ export const StyledField = styled.input`
     border-bottom: 1px solid var(--grey-secondary-color);
     font-size: 16px;
     background: transparent;
-    width: 244px;
+    width: 100%;
     height: 44px;
     resize: none;
 
@@ -123,6 +139,9 @@ export const StyledField = styled.input`
 
   @media screen and (min-width: 768px) {
     width: 390px;
+  }
+  @media screen and (min-width: 1024px) {
+    width: 340px;
   }
 `;
 

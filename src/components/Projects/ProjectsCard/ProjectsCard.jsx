@@ -1,5 +1,6 @@
 import {
   ContainerDesc,
+  ContainerWrapper,
   DescContainer,
   ImageContainer,
   LinksStyled,
@@ -29,17 +30,17 @@ const ProjectsCard = ({ project, image, t }) => {
             </LinksStyled>
           </NameAndLink>
 
-          <p>
-            {t("position")}: <span>{project.Position}</span>
-          </p>
-          <p>
-            {t("team_size")}: <span>{project.TeamSize}</span>
-          </p>
+          <ContainerWrapper>
+            <h4>{t("position")}</h4> : <p>{project.Position}</p>
+          </ContainerWrapper>
+          <ContainerWrapper>
+            <h4>{t("team_size")}</h4> : <p>{project.TeamSize}</p>
+          </ContainerWrapper>
         </TechnologyAndRepoContainer>
 
         <TechnologyAndRepoContainer>
           <NameAndLink>
-            <p>{t("key_technologies")}:</p>
+            <h4>{t("key_technologies")}:</h4>
             {project.ProjectRepository && (
               <LinksStyled href={project.ProjectRepository} target="blank">
                 {t("project_repository")}
