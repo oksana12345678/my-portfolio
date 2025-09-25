@@ -4,5 +4,7 @@
   "third_word": "together",
   "contact": "Contact me",
   "enter_email": "Enter your email",
-  "enter_message": "Enter yor message"
+  "enter_message": "Enter yor message",
+  "sending": "Sending...",
+  "send": "Send"
 }

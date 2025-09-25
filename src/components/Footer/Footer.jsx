@@ -133,7 +133,7 @@ const Footer = () => {
         </StyledFieldContainer>
 
         <SubmitButton type="submit" disabled={isSubmitting}>
-          {isSubmitting ? "Sending..." : "Send"}
+          {isSubmitting ? t("sending") : t("send")}
         </SubmitButton>
       </FooterForm>
       <SocialLinks content="center" />

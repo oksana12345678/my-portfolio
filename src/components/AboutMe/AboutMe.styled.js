@@ -113,10 +113,8 @@ export const DescAboutMe = styled.div`
   font-size: 16px;
   text-transform: uppercase;
   color: var(--light-text-color);
-  padding: 16px;
 
   @media screen and (min-width: 768px) {
-    padding: 32px;
     font-size: 24px;
   }
 `;
