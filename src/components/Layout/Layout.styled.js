@@ -16,7 +16,6 @@ export const HeaderStyled = styled.header`
 
 export const FooterStyled = styled.footer`
   padding: 80px 0;
-  padding-bottom: 120px;
   background-color: transparent;
   display: flex;
   align-items: center;

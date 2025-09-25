@@ -6,6 +6,7 @@ import styled from "styled-components";
 export const SocialMedia = styled.div`
   @media screen and (min-width: 320px) {
     color: var(--text-primary-color);
+    width: 100%;
   }
 `;
 

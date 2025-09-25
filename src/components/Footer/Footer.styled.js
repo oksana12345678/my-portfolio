@@ -13,7 +13,8 @@ export const FooterContainer = styled.div`
 
   @media screen and (min-width: 768px) {
     padding: 0 32px;
-    gap: 32px;
+    gap: 40px;
+    align-items: flex-start;
   }
 `;
 
