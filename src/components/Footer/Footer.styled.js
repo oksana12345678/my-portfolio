@@ -7,6 +7,7 @@ export const FooterContainer = styled.div`
     gap: 46px;
     padding: 0 16px;
     justify-content: center;
+    align-items: center;
     width: 100%;
   }
 
@@ -24,6 +25,7 @@ export const FooterTitle = styled.h3`
     font-weight: 500;
     font-size: 24px;
     text-transform: uppercase;
+    padding-bottom: 8px;
   }
 
   @media screen and (min-width: 678px) {
@@ -64,6 +66,7 @@ export const FooterForm = styled.form`
     display: flex;
     flex-direction: column;
     gap: 24px;
+    min-width: 288px;
   }
 
   @media screen and (min-width: 768px) {

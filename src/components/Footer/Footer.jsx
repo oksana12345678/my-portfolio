@@ -77,15 +77,17 @@ const Footer = () => {
 
   return (
     <FooterContainer id="contacts">
-      <FooterTitle>
-        <FooterTitleSpan>
-          <FooterTitleImg src={meSrc} alt="Picture" />
-          {t("first_word")}
-          <FooterTitleSecondPart>{t("second_word")}</FooterTitleSecondPart>
-        </FooterTitleSpan>
-        {t("third_word")}
-      </FooterTitle>
-      <p>{t("contact")}</p>
+      <div>
+        <FooterTitle>
+          <FooterTitleSpan>
+            <FooterTitleImg src={meSrc} alt="Picture" />
+            {t("first_word")}
+            <FooterTitleSecondPart>{t("second_word")}</FooterTitleSecondPart>
+          </FooterTitleSpan>
+          {t("third_word")}
+        </FooterTitle>
+        <p>{t("contact")}</p>
+      </div>
 
       <FooterForm
         data-netlify="true"
