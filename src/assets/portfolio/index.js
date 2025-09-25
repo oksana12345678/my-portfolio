@@ -10,7 +10,7 @@ import cookingStorm from "./cookingStorm.png";
 import ItAcademy from "./ItAcademy.png";
 import crm from "./crm.png";
 import my_portfolio from "./my_portfolio.png";
-import inHArmony from "./inHarmony.png";
+import inHArmony from "./inHArmony.png";
 import RPG from "./RPG.png";
 import photo_graph from "./photo_grap.png";
 
