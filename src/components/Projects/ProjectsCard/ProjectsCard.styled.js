@@ -149,7 +149,7 @@ export const PortfolioImage = styled.img`
 export const DescContainer = styled.div`
   @media screen and (min-width: 320px) {
     width: 100%;
-    height: 550px;
+    /* height: 550px; */
     display: flex;
     flex-direction: column;
     gap: 16px;
