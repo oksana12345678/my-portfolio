@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { LANGUAGES } from "../../../../shared/constants";
 import Icon from "../../../../shared/components/Icon/Icon";
 import {
@@ -17,6 +17,12 @@ const LanguageSelector = ({ handleLanguageSelect }) => {
     pl: "poland",
     en: "states",
   };
+
+  const savedLang = localStorage.getItem("locale");
+
+  useEffect(() => {
+    setCurrentLang(savedLang);
+  }, [savedLang]);
 
   const handleSelect = (lang) => {
     setCurrentLang(lang);

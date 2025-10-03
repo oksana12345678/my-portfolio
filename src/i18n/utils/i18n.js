@@ -11,6 +11,9 @@ export default async function initTranslations(
 ) {
   const i18nInstance = existingInstance || createInstance();
 
+  const savedLang = localStorage.getItem("locale");
+  const initialLocale = savedLang || locale || i18nConfig.defaultLocale;
+
   i18nInstance.use(initReactI18next);
 
   if (!resources) {
@@ -22,10 +25,10 @@ export default async function initTranslations(
   }
 
   await i18nInstance.init({
-    lng: locale,
-    resources,
+    lng: initialLocale,
     fallbackLng: i18nConfig.defaultLocale,
     supportedLngs: i18nConfig.locales,
+    resources,
     defaultNS: namespaces[0],
     fallbackNS: namespaces[0],
     ns: namespaces,
