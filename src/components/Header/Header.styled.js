@@ -50,5 +50,3 @@ export const LinkStyle = styled.a`
     text-shadow: 2px 6px 3px var(--accent-color-light-hover);
   }
 `;
-
-

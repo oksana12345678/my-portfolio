@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import meSrc from "../../assets/oksana-tanashchuk.png";
+import meSrc from "../../assets/oksana_tanhchuk-removebg-preview.png";
 import { TitleProjects } from "../Projects/Projects.styled";
 import {
   AboutMeSection,

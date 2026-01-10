@@ -34,6 +34,7 @@ export const HeroBG = styled.section`
     background-size: contain;
   }
 `;
+
 export const MainHeroContainer = styled.div`
   @media screen and (min-width: 320px) {
     padding: 0 16px;

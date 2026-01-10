@@ -121,8 +121,7 @@ export const DescAboutMe = styled.div`
 
 export const Image = styled.img`
   width: 100%;
-  border-radius: 16px;
-  object-fit: contain;
+  object-fit: cover;
   height: 100%;
 
   @media screen and (min-width: 768px) {
