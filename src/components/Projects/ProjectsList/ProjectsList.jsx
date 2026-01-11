@@ -1,7 +1,8 @@
 import { SwiperSlide, Swiper } from "swiper/react";
 import "swiper/css";
+import "swiper/css/effect-coverflow";
 import ProjectsCard from "../ProjectsCard/ProjectsCard";
-import { Navigation } from "swiper/modules";
+import { EffectCoverflow, Navigation } from "swiper/modules";
 import { useRef } from "react";
 import {
   ButtonContainer,
@@ -69,9 +70,20 @@ const ProjectsList = ({ t }) => {
     <div>
       <Swiper
         onSwiper={(swiper) => (swiperRefTwo.current = swiper)}
-        modules={[Navigation]}
+        modules={[EffectCoverflow, Navigation]}
         loop={true}
-        slidesPerView={1}
+        slidesPerView={"auto"}
+        effect={"coverflow"}
+        grabCursor={true}
+        centeredSlides={true}
+        coverflowEffect={{
+          rotate: 50,
+          stretch: 0,
+          depth: 100,
+          modifier: 1,
+          slideShadows: true,
+        }}
+        pagination={true}
       >
         {projectKeys.map((key, index) => {
           const project = t(key, { returnObjects: true });
