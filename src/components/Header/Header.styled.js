@@ -50,3 +50,13 @@ export const LinkStyle = styled.a`
     text-shadow: 2px 6px 3px var(--accent-color-light-hover);
   }
 `;
+
+export const LanguageSwitcherContainer = styled.div`
+  @media screen and (min-width: 320px) {
+    display: block;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+`;

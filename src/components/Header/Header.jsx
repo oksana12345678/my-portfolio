@@ -2,6 +2,7 @@ import MobileMenu from "../MobileMenu/MobileMenu";
 import {
   Image,
   ImageStyled,
+  LanguageSwitcherContainer,
   LinkStyle,
   ListStyle,
   MainContainer,
@@ -29,7 +30,9 @@ const Header = () => {
             <Image src={logo} />
           </a>
         </ImageStyled>
-        <LanguageSelector handleLanguageSelect={handleLanguageSelect} />
+        <LanguageSwitcherContainer>
+          <LanguageSelector handleLanguageSelect={handleLanguageSelect} />
+        </LanguageSwitcherContainer>
 
         <MobileMenu />
         <ListStyle>
@@ -42,6 +45,9 @@ const Header = () => {
           </li>
           <li>
             <LinkStyle href="#contacts">{t("nav.contact")}</LinkStyle>
+          </li>
+          <li>
+            <LanguageSelector handleLanguageSelect={handleLanguageSelect} />
           </li>
         </ListStyle>
       </MainContainer>

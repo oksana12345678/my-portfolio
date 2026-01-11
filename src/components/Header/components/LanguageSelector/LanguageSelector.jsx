@@ -21,7 +21,11 @@ const LanguageSelector = ({ handleLanguageSelect }) => {
   const savedLang = localStorage.getItem("locale");
 
   useEffect(() => {
-    setCurrentLang(savedLang);
+    if (savedLang) {
+      setCurrentLang(savedLang);
+    } else {
+      setCurrentLang(LANGUAGES.PL);
+    }
   }, [savedLang]);
 
   const handleSelect = (lang) => {
