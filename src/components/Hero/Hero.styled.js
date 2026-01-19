@@ -3,23 +3,23 @@ import meSrc from "../../assets/fon.png";
 
 export const HeroBG = styled.section`
   @media screen and (min-width: 320px) {
-    background: url(${meSrc});
+    /* background: url(${meSrc});
     background-repeat: no-repeat;
     background-position: right top 0px;
-    background-size: contain;
+    background-size: contain; */
     height: calc(100vh - 10px);
     max-height: 1000px;
     width: 100%;
     display: flex;
-    padding: 90px 0 80px 0;
+    padding: 80px 0 80px 0;
 
-    &::after {
+    /* &::after {
       content: "";
       position: absolute;
       inset: 0;
       max-height: 1000px;
       background: rgba(0, 0, 0, 0.2);
-    }
+    } */
   }
 
   @media screen and (min-width: 768px) {
@@ -29,7 +29,6 @@ export const HeroBG = styled.section`
   }
 
   @media screen and (min-width: 1024px) {
-    height: calc(100vh - 10px);
     background-position: right bottom 40px;
     background-size: contain;
   }
@@ -39,11 +38,22 @@ export const MainHeroContainer = styled.div`
   @media screen and (min-width: 320px) {
     padding: 0 16px;
     display: flex;
-    align-items: flex-end;
-    justify-content: flex-end;
+    align-items: center;
+    justify-content: center;
     flex-direction: column;
     width: 100%;
-    gap: 120px;
+    gap: 60px;
+  }
+
+  p {
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+    color: var(--grey-text-color);
+
+    @media screen and (min-width: 768px) {
+      font-size: 32px;
+    }
   }
 
   @media screen and (min-width: 768px) {
@@ -62,19 +72,9 @@ export const Title = styled.h1`
     color: var(--light-text-color);
     display: flex;
     flex-direction: column;
-    text-align: start;
-    align-items: flex-start;
+    text-align: center;
+    align-items: center;
     width: 100%;
-  }
-
-  span {
-    font-weight: 400;
-    font-size: 20px;
-    color: var(--grey-text-color);
-
-    @media screen and (min-width: 768px) {
-      font-size: 32px;
-    }
   }
 
   @media screen and (min-width: 768px) {

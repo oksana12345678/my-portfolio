@@ -5,6 +5,8 @@ import {
   flyToCenterThree,
   flyToCenterTwo,
   logoAnimation,
+  shooting,
+  twinkle,
 } from "./Animation";
 
 const Square = styled.div`
@@ -125,4 +127,41 @@ export const BackBlur = styled.div`
   z-index: 101;
   background-color: rgba(0, 0, 0, 0.1);
   animation: ${backBlurAnimation} 6s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+`;
+
+///bg animation
+
+export const BgAnimationStyled = styled.div`
+  position: fixed;
+  pointer-events: none;
+  inset: 0;
+  overflow: hidden;
+  background: transparent;
+  display: flex;
+`;
+
+export const Sky = styled.div`
+  position: fixed;
+  inset: 0;
+  background: transparent;
+  overflow: hidden;
+  pointer-events: none;
+`;
+
+export const StaticStar = styled.div`
+  position: absolute;
+  background: white;
+  border-radius: 50%;
+  animation: ${twinkle} 4s ease-in-out infinite;
+`;
+
+export const ShootingStar = styled.div`
+  position: absolute;
+  width: 65px;
+  height: 0.5px;
+  background: linear-gradient(white, transparent);
+  box-shadow: 0px 0px 0.5px 0.5px white;
+  border-radius: 50%;
+  opacity: 0;
+  animation: ${shooting} linear infinite;
 `;

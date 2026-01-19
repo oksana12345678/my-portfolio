@@ -3,6 +3,8 @@
 
   "inHarmony": {
     "image": "inHarmony",
+    "id": "1",
+
     "name": "inHarmony",
     "webSite": "https://inharmony.com.ua",
     "Position": "Fullstack Developer",
@@ -30,6 +32,8 @@
   },
   "photo_graph": {
     "image": "photo_graph",
+    "id": "2",
+
     "name": "Grapher Shot.",
     "webSite": "https://photo-gallery-react-iota.vercel.app",
     "Position": "Developer",
@@ -55,6 +59,8 @@
   },
   "RPG": {
     "image": "RPG",
+    "id": "3",
+
     "name": "IT Academy RPG web-site",
     "webSite": "https://it-academy-rpg.vercel.app",
     "Position": "Developer",
@@ -73,6 +79,7 @@
   },
   "yachtJet": {
     "image": "yachtJet",
+    "id": "4",
     "name": "YachtJet Website",
     "webSite": "https://oksana12345678.github.io/YachtJet-",
     "Position": "Team Lead, Developer",
@@ -94,6 +101,7 @@
   },
   "portfolio": {
     "image": "portfolio",
+    "id": "5",
     "name": "Portfolio Website",
     "webSite": "https://tina3008.github.io/project-group-3",
     "Position": "Developer",
@@ -115,6 +123,7 @@
   },
   "movieFinder": {
     "image": "movieFinder",
+    "id": "6",
     "name": "MovieFinder",
     "webSite": "https://search-for-movies-and-view-description.vercel.app",
     "Position": "Developer",
@@ -137,6 +146,7 @@
   },
   "water": {
     "image": "water",
+    "id": "7",
     "name": "Tracker of Water",
     "webSite": "https://stack-bridge.vercel.app/welcome",
     "Position": "Team Lead",
@@ -166,6 +176,7 @@
   },
   "travel": {
     "image": "travel",
+    "id": "8",
     "name": "TravelTrucks",
     "webSite": "https://travel-trucks-ten.vercel.app",
     "Position": "Developer",
@@ -189,6 +200,7 @@
   },
   "phoneBook": {
     "image": "phoneBook",
+    "id": "9",
     "name": "Phone Book",
     "webSite": "https://phone-book-kohl.vercel.app",
     "Position": "Developer",
@@ -218,6 +230,7 @@
   },
   "itAcademy": {
     "image": "ItAcademy",
+    "id": "10",
     "name": "IT Academy RPG",
     "webSite": "https://t.me/tanoksa_bot",
     "Position": "Front-end Developer",
@@ -237,6 +250,7 @@
   },
   "farm": {
     "image": "farm",
+    "id": "11",
     "name": "Farm Sort Puzzle (commercial)",
     "webSite": "https://roksana-st.github.io/evoplay3",
     "Position": "Front-end Developer",
@@ -247,6 +261,7 @@
   },
   "backendPB": {
     "image": "backendPB",
+    "id": "12",
     "name": "Phone Book Backend",
     "webSite": "https://validation-5dsv.onrender.com/api-docs",
     "Position": "Backend Developer",
@@ -270,6 +285,7 @@
   },
   "cookingStorm": {
     "image": "cookingStorm",
+    "id": "13",
     "name": "Cooking Storm (commercial)",
     "webSite": "https://oksana12345678.github.io/evoplay_cooking_storm",
     "Position": "Front-end Developer",
@@ -280,6 +296,7 @@
   },
   "crm": {
     "image": "crm",
+    "id": "14",
     "name": "CRM",
     "webSite": "https://crm-five-zeta.vercel.app/",
     "Position": "Developer",
@@ -305,6 +322,7 @@
   },
   "my_portfolio": {
     "image": "my_portfolio",
+    "id": "15",
     "name": "My Portfolio",
     "webSite": "https://oksana-tanashchuk-portfolio.netlify.app",
     "Position": "Developer",

@@ -12,6 +12,9 @@ import path from "path";
 
 export default defineConfig({
   plugins: [react()],
+  optimizeDeps: {
+    exclude: ["tech-stack-icons"],
+  },
   resolve: {
     alias: {
       "@": path.resolve("src"),

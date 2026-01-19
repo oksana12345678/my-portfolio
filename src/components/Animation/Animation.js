@@ -17,7 +17,7 @@ export const flyToCenterBase = keyframes`
   }
 
   100% {
-    display: none;
+    /* display: none; */
 
   }
 `;
@@ -44,7 +44,7 @@ opacity: 1;
   100% {   
      rotate: -50deg;  
 
-    display: none;
+    /* display: none; */
 
   }
 `;
@@ -72,8 +72,9 @@ export const flyToCenter = keyframes`
   }
 
   100% {
-    transform: translate(0, 0) scale(1);
-    display: none;
+    /* transform: translate(0, 0) scale(1); */
+     transform: translate(-1700px, -200px) scale(0);
+    /* display: none; */
     rotate: 50deg;  
     filter: blur(2px);
 
@@ -104,7 +105,7 @@ export const flyToCenterTwo = keyframes`
     transform: translate(0, 0) scale(1);
     rotate: 50deg;
     filter: blur(20px);
-    display: none;
+     transform: translate(-1700px, -200px) scale(0);
   }
 `;
 export const flyToCenterThree = keyframes`
@@ -128,7 +129,7 @@ export const flyToCenterThree = keyframes`
   100% {
     transform: translate(0, 0) scale(1);
     rotate: 50deg;
-    display: none;
+     transform: translate(-1700px, -200px) scale(0);
   }
 `;
 
@@ -156,6 +157,37 @@ export const backBlurAnimation = keyframes`
     transform: translate(0, 0) scale(1);
     rotate: 0deg;
     filter: blur(20px);
-    display: none;
+     transform: translate(-1700px, -100px) scale(0);
+  }
+`;
+
+/// bg animation stars
+
+export const starsFall = keyframes`
+
+  from {
+    transform: translateY(0);
+    opacity: 0.8;
+  }
+  to {
+    transform: translateY(110vh);
+    opacity: 0;
+  }
+`;
+
+export const twinkle = keyframes`
+  0% { opacity: 0.2; }
+  50% { opacity: 1; }
+  100% { opacity: 0.2; }
+`;
+
+export const shooting = keyframes`
+  0% {
+    transform: translate(0, 0) rotate(-55deg) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(-600px, 600px) rotate(-55deg) scale(0.5);
+    opacity: 0;
   }
 `;

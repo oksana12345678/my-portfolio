@@ -5,14 +5,14 @@ export const FooterContainer = styled.div`
     display: flex;
     flex-direction: column;
     gap: 46px;
-    padding: 0 16px;
+    padding: 0 16px 40px 16px;
     justify-content: center;
     align-items: center;
     width: 100%;
   }
 
   @media screen and (min-width: 768px) {
-    padding: 0 32px;
+    padding: 0 16px 100px 62px;
     gap: 40px;
     align-items: flex-start;
   }
@@ -166,11 +166,13 @@ export const SubmitButton = styled.button`
     cursor: pointer;
     transition: all 0.4s ease-in-out;
     text-shadow: 0 4px 15px var(--accent-color-light-hover);
-    box-shadow: 0 2px 12px var(--accent-color-light-hover),
+    box-shadow:
+      0 2px 12px var(--accent-color-light-hover),
       0 0 25px var(--accent-color-light-hover);
 
     &:hover {
-      box-shadow: 0 6px 44px var(--accent-color-light-hover),
+      box-shadow:
+        0 6px 44px var(--accent-color-light-hover),
         0 0 25px var(--accent-color-light-hover);
       text-shadow: 2px 8px 3px var(--accent-color-light-hover);
     }

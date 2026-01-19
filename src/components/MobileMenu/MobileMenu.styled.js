@@ -47,11 +47,11 @@ export const BurgerButton = styled.div`
 
 export const DropdownMenu = styled.ul`
   position: fixed;
-  top: 50%;
+  top: -100%;
   right: 50%;
-  transform: translate(50%, -10%);
+  transform: translate(50%, -76%);
   backdrop-filter: blur(15px);
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   border-radius: 10px;
   padding: 10px 20px;
@@ -77,7 +77,8 @@ export const MenuItem = styled.a`
   text-transform: capitalize;
 
   &:hover {
-    box-shadow: 0 4px 15px var(--accent-color-light-hover),
+    box-shadow:
+      0 4px 15px var(--accent-color-light-hover),
       0 0 25px var(--accent-color-light-hover);
     text-shadow: 2px 6px 3px var(--accent-color-light-hover);
   }

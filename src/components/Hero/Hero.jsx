@@ -1,5 +1,6 @@
 import SocialLinks from "../../shared/components/SocialLinks/SocialLinks";
 import { HeroBG, MainHeroContainer, Title } from "./Hero.styled";
+
 import { useTranslation } from "react-i18next";
 
 const Hero = () => {
@@ -9,10 +10,8 @@ const Hero = () => {
     <>
       <HeroBG>
         <MainHeroContainer>
-          <Title>
-            {t("title")}
-            <span>{t("subtitle")}</span>
-          </Title>
+          <Title>{t("title")}</Title>
+          <p>{t("subtitle")}</p>
           <SocialLinks />
         </MainHeroContainer>
       </HeroBG>

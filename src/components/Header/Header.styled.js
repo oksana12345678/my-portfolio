@@ -11,14 +11,29 @@ export const MainContainer = styled.nav`
     padding: 0 32px;
   }
 `;
+
 export const ImageStyled = styled.div`
-  width: 100px;
-  height: 100px;
+  @media screen and (min-width: 320px) {
+    width: 60px;
+    height: 60px;
+    z-index: 110;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 100px;
+    height: 100px;
+  }
 `;
 
 export const Image = styled.img`
-  width: 100px;
-  height: 100px;
+  @media screen and (min-width: 320px) {
+    width: 60px;
+    height: 60px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 100px;
+    height: 100px;
+  }
 `;
 
 export const ListStyle = styled.ul`
@@ -29,6 +44,7 @@ export const ListStyle = styled.ul`
 
   @media screen and (min-width: 768px) {
     display: flex;
+    z-index: 110;
   }
 `;
 
@@ -58,5 +74,26 @@ export const LanguageSwitcherContainer = styled.div`
 
   @media screen and (min-width: 768px) {
     display: none;
+  }
+`;
+
+export const BgBlur = styled.div`
+  @media screen and (min-width: 320px) {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    backdrop-filter: blur(4px);
+    border-radius: 16px;
+  }
+`;
+
+export const BurgerAndLanguageContainer = styled.div`
+  @media screen and (min-width: 320px) {
+    display: flex;
+    align-items: center;
+    gap: 24px;
   }
 `;

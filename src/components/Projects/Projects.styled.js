@@ -13,15 +13,17 @@ export const MainContainerProjects = styled.div`
   }
 
   @media screen and (min-width: 768px) {
-    padding: 0 32px;
+    padding: 0 62px;
   }
 `;
 
 export const TitleProjects = styled.h2`
   font-weight: 600;
-  font-size: 16px;
+  font-size: 32px;
+  opacity: 0.9;
   color: var(--grey-text-color);
   line-height: 1.5;
   letter-spacing: -0.02em;
   text-transform: uppercase;
+  text-align: center;
 `;

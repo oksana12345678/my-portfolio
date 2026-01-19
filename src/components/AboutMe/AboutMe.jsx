@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import meSrc from "../../assets/oksana_tanhchuk-removebg-preview.png";
+import meSrc from "@/assets/oksana-tanashchuk.png";
 import { TitleProjects } from "../Projects/Projects.styled";
 import {
   AboutMeSection,
@@ -28,7 +28,7 @@ const AboutMe = () => {
           setIsVisible(false);
         }
       },
-      { threshold: 0.1 }
+      { threshold: 0.1 },
     );
 
     const currentSection = sectionRef.current;

@@ -4,15 +4,15 @@ import {
   SliderContainer,
   SliderItem,
   SliderWrapper,
-  ControlButton,
+  // ControlButton,
 } from "./Skills.styled";
-import { GrFormNextLink, GrFormPreviousLink } from "react-icons/gr";
+// import { GrFormNextLink, GrFormPreviousLink } from "react-icons/gr";
 import { SKILLS } from "../../../shared/constants";
 
 const Skills = () => {
   const containerRef = useRef(null);
   const [scrollAmount, setScrollAmount] = useState(0);
-  const [isScrolling, setIsScrolling] = useState(true);
+  const [isScrolling] = useState(true);
 
   const duplicatedSkills = [...SKILLS, ...SKILLS];
 
@@ -35,15 +35,15 @@ const Skills = () => {
     return () => clearInterval(interval);
   }, [isScrolling]);
 
-  const handlePrev = () => {
-    setIsScrolling(false);
-    setScrollAmount((prev) => Math.max(prev - 150, 0));
-  };
+  // const handlePrev = () => {
+  //   setIsScrolling(false);
+  //   setScrollAmount((prev) => Math.max(prev - 150, 0));
+  // };
 
-  const handleNext = () => {
-    setIsScrolling(false);
-    setScrollAmount((prev) => prev + 150);
-  };
+  // const handleNext = () => {
+  //   setIsScrolling(false);
+  //   setScrollAmount((prev) => prev + 150);
+  // };
 
   useEffect(() => {
     const wrapper = containerRef.current;
@@ -54,9 +54,9 @@ const Skills = () => {
 
   return (
     <SliderContainer>
-      <ControlButton onClick={handlePrev}>
+      {/* <ControlButton onClick={handlePrev}>
         <GrFormPreviousLink />
-      </ControlButton>
+      </ControlButton> */}
       <SliderWrapper ref={containerRef}>
         {duplicatedSkills.map((skill, index) => (
           <SliderItem key={index}>
@@ -65,9 +65,9 @@ const Skills = () => {
           </SliderItem>
         ))}
       </SliderWrapper>
-      <ControlButton onClick={handleNext}>
+      {/* <ControlButton onClick={handleNext}>
         <GrFormNextLink />
-      </ControlButton>
+      </ControlButton> */}
     </SliderContainer>
   );
 };

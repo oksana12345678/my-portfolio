@@ -16,13 +16,13 @@ import logo from "/logo.png";
 const WelcomeAnimation = ({ showAnimation }) => {
   useEffect(() => {
     if (showAnimation) {
-      document.body.style.overflow = "hidden";
+      document.body.classList.add("no-scroll");
     } else {
-      document.body.style.overflow = "auto";
+      document.body.classList.remove("no-scroll");
     }
 
     return () => {
-      document.body.style.overflow = "auto";
+      document.body.classList.remove("no-scroll");
     };
   }, [showAnimation]);
 

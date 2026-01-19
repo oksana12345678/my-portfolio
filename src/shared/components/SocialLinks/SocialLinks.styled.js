@@ -12,8 +12,8 @@ export const SocialMedia = styled.div`
 
 export const SocialMediaList = styled.ul`
   @media screen and (min-width: 320px) {
-    align-items: ${({ item }) => item || "flex-start"};
-    justify-content: ${({ content }) => content || "flex-start"};
+    align-items: ${({ item }) => item || "center"};
+    justify-content: ${({ content }) => content || "center"};
 
     display: flex;
     gap: 24px;
@@ -25,7 +25,9 @@ export const Icons = styled(SlSocialLinkedin)`
     width: 26px;
     height: 26px;
     color: var(--light-text-color);
-    transition: color 0.4s ease-in-out, filter 0.4s ease-in-out;
+    transition:
+      color 0.4s ease-in-out,
+      filter 0.4s ease-in-out;
     filter: drop-shadow(0 4px 15px var(--error-color))
       drop-shadow(0 0 3px var(--error-color));
 
@@ -48,7 +50,9 @@ export const IconsGit = styled(VscGithubAlt)`
     width: 26px;
     height: 26px;
     color: var(--light-text-color);
-    transition: color 0.4s ease-in-out, filter 0.4s ease-in-out;
+    transition:
+      color 0.4s ease-in-out,
+      filter 0.4s ease-in-out;
     filter: drop-shadow(0 4px 15px var(--error-color))
       drop-shadow(0 0 3px var(--error-color));
 
@@ -71,7 +75,9 @@ export const IconsTelegram = styled(PiTelegramLogoLight)`
     width: 26px;
     height: 26px;
     color: var(--light-text-color);
-    transition: color 0.4s ease-in-out, filter 0.4s ease-in-out;
+    transition:
+      color 0.4s ease-in-out,
+      filter 0.4s ease-in-out;
 
     filter: drop-shadow(0 4px 15px var(--error-color))
       drop-shadow(0 0 3px var(--error-color));

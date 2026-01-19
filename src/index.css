@@ -14,10 +14,10 @@
   -moz-osx-font-smoothing: grayscale;
 
   --main-bg: #000000;
-
+  --dark-waves: #294259;
   --text-primary-color: #ebeef0;
   --bg-button-color: linear-gradient(rgb(97, 159, 218), rgb(207, 226, 241));
-  --bg-color: linear-gradient(rgb(97, 159, 218), var(--main-bg));
+  --bg-color-accent: linear-gradient(rgb(62, 88, 112), var(--main-bg));
   --bg-color: linear-gradient(
     to bottom,
     rgba(97, 159, 218, 0.5) 60%,

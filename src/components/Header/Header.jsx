@@ -1,5 +1,7 @@
 import MobileMenu from "../MobileMenu/MobileMenu";
 import {
+  BgBlur,
+  BurgerAndLanguageContainer,
   Image,
   ImageStyled,
   LanguageSwitcherContainer,
@@ -25,16 +27,19 @@ const Header = () => {
   return (
     <>
       <MainContainer>
+        <BgBlur></BgBlur>
         <ImageStyled>
-          <a href="#contacts">
+          <a href="">
             <Image src={logo} />
           </a>
         </ImageStyled>
-        <LanguageSwitcherContainer>
-          <LanguageSelector handleLanguageSelect={handleLanguageSelect} />
-        </LanguageSwitcherContainer>
+        <BurgerAndLanguageContainer>
+          <LanguageSwitcherContainer>
+            <LanguageSelector handleLanguageSelect={handleLanguageSelect} />
+          </LanguageSwitcherContainer>
 
-        <MobileMenu />
+          <MobileMenu />
+        </BurgerAndLanguageContainer>
         <ListStyle>
           <li>
             <LinkStyle href="#about-me">{t("nav.about")}</LinkStyle>

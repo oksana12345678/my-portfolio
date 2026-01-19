@@ -2,7 +2,6 @@ import { AiFillApi } from "react-icons/ai";
 import { FaTelegramPlane } from "react-icons/fa";
 import { SiExpress, SiStyledcomponents } from "react-icons/si";
 import StackIcon from "tech-stack-icons";
-
 import {
   backendPB,
   cookingStorm,
@@ -30,7 +29,7 @@ export const SKILLS = [
   { name: "CSS", icon: <StackIcon name="css3" /> },
   { name: "SCSS", icon: <StackIcon name="sass" /> },
   { name: "JavaScript", icon: <StackIcon name="js" /> },
-  { name: "React", icon: <StackIcon name="reactjs" /> },
+  { name: "React", icon: <StackIcon name="preact" /> },
   { name: "Node.js", icon: <StackIcon name="nodejs" /> },
   { name: "React Router", icon: <StackIcon name="reactrouter" /> },
   { name: "Git", icon: <StackIcon name="git" /> },
@@ -63,6 +62,7 @@ export const SKILLS = [
 export const PROJECTS = [
   {
     image: inHArmony,
+    id: 1,
     name: "inHarmony",
     webSite: "https://inharmony.com.ua",
     Position: "Fullstack Developer",
@@ -102,6 +102,8 @@ export const PROJECTS = [
   },
   {
     image: photo_graph,
+    id: 2,
+
     name: "Grapher Shot.",
     webSite: "https://photo-gallery-react-iota.vercel.app",
     Position: "Developer",
@@ -129,6 +131,8 @@ export const PROJECTS = [
   },
   {
     image: RPG,
+    id: 3,
+
     name: "IT Academy RPG web-site",
     webSite: "https://it-academy-rpg.vercel.app",
     Position: "Developer",
@@ -148,6 +152,8 @@ export const PROJECTS = [
 
   {
     image: yachtJet,
+    id: 4,
+
     name: "YachtJet Website",
     webSite: "https://oksana12345678.github.io/YachtJet-",
     Position: "Team Lead, Developer",
@@ -171,6 +177,8 @@ Collaborated closely with designers and stakeholders to ensure the website adher
   },
   {
     image: portfolio,
+    id: 5,
+
     name: "Portfolio Website",
     webSite: "https://tina3008.github.io/project-group-3",
     Position: "Developer",
@@ -193,6 +201,8 @@ Ensured the section adhered to the given layout and specifications as per projec
 
   {
     image: movieFinder,
+    id: 6,
+
     name: "MovieFinder",
     webSite: "https://search-for-movies-and-view-description.vercel.app",
     Position: "Developer",
@@ -216,6 +226,8 @@ Routing: Efficient navigation between pages using React Routes.`,
   },
   {
     image: water,
+    id: 7,
+
     name: "Tracker of Water",
     webSite: "https://stack-bridge.vercel.app/welcome",
     Position: "Team Lead",
@@ -247,6 +259,7 @@ Responsive Design: Optimized for all devices (mobile, tablet, desktop).
   },
   {
     image: travel,
+    id: 8,
     name: "TravelTrucks",
     webSite: "https://travel-trucks-ten.vercel.app",
     Position: "Developer",
@@ -271,6 +284,7 @@ Responsive Design: Optimized for all devices (mobile, tablet, desktop).
   },
   {
     image: phoneBook,
+    id: 9,
     name: "Phone Book",
     webSite: "https://phone-book-kohl.vercel.app",
     Position: "Developer",
@@ -304,6 +318,7 @@ Responsive Design: Optimized for all devices (mobile, tablet, desktop).
   },
   {
     image: ItAcademy,
+    id: 10,
     name: "IT Academy RPG (commercial)",
     webSite: "https://t.me/IAR_test_bot",
     Position: "Front-end Developer",
@@ -331,6 +346,7 @@ Responsive Design: Optimized for all devices (mobile, tablet, desktop).
   },
   {
     image: farm,
+    id: 11,
     name: "Farm Sort Puzzle (commercial)",
     webSite: "https://roksana-st.github.io/evoplay3",
     Position: "Front-end Developer",
@@ -342,6 +358,7 @@ Responsive Design: Optimized for all devices (mobile, tablet, desktop).
 
   {
     image: backendPB,
+    id: 12,
     name: "Phone Book Backend",
     webSite: "https://validation-5dsv.onrender.com/api-docs",
     Position: "Backend Developer",
@@ -368,6 +385,7 @@ Responsive Design: Optimized for all devices (mobile, tablet, desktop).
 
   {
     image: cookingStorm,
+    id: 13,
     name: "Cooking Storm (commercial)",
     webSite: "https://oksana12345678.github.io/evoplay_cooking_storm",
     Position: "Front-end Developer",
@@ -379,6 +397,7 @@ Responsive Design: Optimized for all devices (mobile, tablet, desktop).
   },
   {
     image: crm,
+    id: 14,
     name: "CRM",
     webSite: "https://crm-five-zeta.vercel.app/",
     Position: "Developer",
@@ -404,6 +423,7 @@ Focus: The project emphasizes developer productivity (via ESLint, Prettier, and 
   },
   {
     image: my_portfolio,
+    id: 15,
     name: "My Portfolio",
     webSite: "https://oksana-tanashchuk-portfolio.netlify.app",
     Position: "Developer",

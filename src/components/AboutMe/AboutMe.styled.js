@@ -54,7 +54,7 @@ export const MainContainerAboutMe = styled.div`
     `}
 
   @media screen and (min-width: 768px) {
-    padding: 0 32px;
+    padding: 0 62px;
   }
 `;
 

@@ -13,7 +13,7 @@ const App = () => {
   useEffect(() => {
     const timer = setTimeout(() => {
       setShowAnimation(false);
-    }, 6010);
+    }, 8000);
 
     return () => clearTimeout(timer);
   }, []);
@@ -22,7 +22,6 @@ const App = () => {
     <>
       <ToastContainer />
       <WelcomeAnimation showAnimation={showAnimation} />
-
       <Layout>
         <Hero />
         <AboutMe />
