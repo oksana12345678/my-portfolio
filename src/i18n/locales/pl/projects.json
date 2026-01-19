@@ -9,7 +9,7 @@
     "TeamSize": "9 programistów",
     "Responsibilities": [
       "In Harmony – projekt charytatywny",
-      "In Harmony – projekt internetowy stworzony w celu wsparcia organizacji charytatywnej pomagającej potrzebującym. Platforma została zaprojektowana z myślą o użyteczności, wydajności i nowoczesnych technologiach internetowych, aby poprawić doświadczenie użytkowników końcowych.",
+      "Projekt internetowy stworzony w celu wsparcia organizacji charytatywnej pomagającej potrzebującym. Platforma została zaprojektowana z myślą o użyteczności, wydajności i nowoczesnych technologiach internetowych, aby poprawić doświadczenie użytkowników końcowych.",
       "Moja rola: Fullstack Developer",
       "- Integracja bazy danych: projektowanie i wdrażanie logiki backendu oraz zapewnienie płynnej interakcji między backendem a bazą danych. Obejmuje konfigurację MongoDB, tworzenie schematów i obsługę operacji CRUD za pomocą Mongoose i tras API Next.js.",
       "- Rozwój frontendu: tworzenie interfejsu użytkownika (UI) za pomocą Next.js, projektowanie responsywnych, dynamicznych i dostępnych komponentów. Praca z Sass do stylizacji oraz implementacja i18next dla wsparcia wielojęzycznego.",
@@ -25,7 +25,7 @@
       "i18n",
       "Multer",
       "Cloudinary",
-      "Git do kontroli kodu"
+      "Git "
     ]
   },
   "photo_graph": {
@@ -47,7 +47,7 @@
     "KeyTechnologies": [
       "React.js",
       "React Router",
-      "Formik & Yup (Formularze i walidacja)",
+      "Formik & Yup",
       "React Calendar / Datepicker",
       "Axios",
       "Swiper",
@@ -65,13 +65,7 @@
       "IT Academy RPG – dynamiczna platforma prezentująca projekt IT Academy RPG. Zbudowana w Next.js, wykorzystuje SSR w celu szybkiego ładowania i optymalnej wydajności.",
       "Strona wspiera wielojęzyczność (i18n), co czyni ją dostępną dla szerszej publiczności. Stylizowana przy użyciu Tailwind CSS, oferuje nowoczesne i responsywne doświadczenie użytkownika. Git stosowany do kontroli wersji."
     ],
-    "KeyTechnologies": [
-      "Next.js",
-      "Tailwind",
-      "SSR",
-      "i18n",
-      "Git do kontroli kodu"
-    ]
+    "KeyTechnologies": ["Next.js", "Tailwind", "SSR", "i18n", "Git"]
   },
   "yachtJet": {
     "image": "yachtJet",
@@ -92,7 +86,7 @@
       "CSS",
       "JavaScript",
       "Responsywny design",
-      "Narzędzia współpracy (np. Git do kontroli kodu)"
+      "Git"
     ]
   },
   "portfolio": {
@@ -114,7 +108,7 @@
       "CSS",
       "JavaScript",
       "Responsywny design",
-      "Narzędzia współpracy (np. Git do kontroli kodu)"
+      "Git"
     ]
   },
   "movieFinder": {
@@ -133,12 +127,7 @@
       "- Popularne filmy: strona główna prezentuje najpopularniejsze filmy.",
       "- Routing: efektywna nawigacja między stronami przy użyciu React Routes."
     ],
-    "KeyTechnologies": [
-      "React.js",
-      "React Routes",
-      "JavaScript",
-      "CSS (styling)"
-    ]
+    "KeyTechnologies": ["React.js", "React Routes", "JavaScript", "CSS"]
   },
   "water": {
     "image": "water",
@@ -259,10 +248,8 @@
     "image": "backendPB",
     "id": "12",
     "name": "Phone Book Backend",
-    "webSite": "https://validation-5dsv.onrender.com/api-docs",
     "Position": "Backend Developer",
     "TeamSize": "Programista",
-    "ProjectRepository": "https://github.com/oksana12345678/contactsBackendJS",
     "Responsibilities": [
       "Tworzenie backendu dla Phone Book umożliwiającego rejestrację, dodawanie, edycję i usuwanie kontaktów oraz przesyłanie avatarów. System zapewnia bezpieczne przechowywanie haseł, obsługę plików, walidację danych i integrację z usługami chmurowymi do pracy z obrazami."
     ],
@@ -315,26 +302,6 @@
       "Tailwind CSS",
       "Formik",
       "React Query"
-    ]
-  },
-  "my_portfolio": {
-    "image": "my_portfolio",
-    "id": "15",
-    "name": "My Portfolio",
-    "webSite": "https://oksana-tanashchuk-portfolio.netlify.app",
-    "Position": "Programista",
-    "TeamSize": "Jeden programista",
-    "ProjectRepository": "https://github.com/oksana12345678/my-portfolio",
-    "Responsibilities": [
-      "My Portfolio – aplikacja webowa do prezentacji projektów i umiejętności w czystym, responsywnym i interaktywnym formacie."
-    ],
-    "KeyTechnologies": [
-      "React",
-      "Swiper",
-      "Styled Components",
-      "React Icons & React Icon",
-      "Formik",
-      "Gulp"
     ]
   },
   "visit_button": "Odwiedź",

@@ -52,7 +52,7 @@ export const DropdownMenu = styled.ul`
   transform: translate(50%, -76%);
   backdrop-filter: blur(15px);
   width: 100vw;
-  height: 100vh;
+  height: 100dvh;
   border-radius: 10px;
   padding: 10px 20px;
   display: ${(props) => (props.$isOpen ? "flex" : "none")};

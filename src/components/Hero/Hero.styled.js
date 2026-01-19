@@ -7,7 +7,7 @@ export const HeroBG = styled.section`
     background-repeat: no-repeat;
     background-position: right top 0px;
     background-size: contain; */
-    height: calc(100vh - 10px);
+    height: calc(100dvh - 10px);
     max-height: 1000px;
     width: 100%;
     display: flex;
@@ -23,7 +23,7 @@ export const HeroBG = styled.section`
   }
 
   @media screen and (min-width: 768px) {
-    height: calc(100vh - 10px);
+    height: calc(100dvh - 10px);
     background-position: right top -110px;
     background-size: 600px;
   }

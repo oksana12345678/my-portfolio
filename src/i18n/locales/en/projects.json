@@ -11,7 +11,7 @@
     "TeamSize": "9 developers",
     "Responsibilities": [
       "In Harmony – a charity project",
-      "In Harmony – a web project created to support a charitable organization that helps people in need. The platform is built with a focus on convenience, performance, and modern web technologies to improve the end-user experience.",
+      "A web project created to support a charitable organization that helps people in need. The platform is built with a focus on convenience, performance, and modern web technologies to improve the end-user experience.",
       "My role: Fullstack Developer",
       "- Database integration: Developed and implemented backend logic and ensured seamless interaction between the server and the database. This included configuring MongoDB, creating schemas, and handling CRUD operations using Mongoose and Next.js API routes.",
       "- Frontend development: Created the user interface (UI) using Next.js, developing responsive, dynamic, and accessible components. Used Sass for styling and implemented i18next for multilingual support.",
@@ -27,7 +27,7 @@
       "i18n",
       "Multer",
       "Cloudinary",
-      "Git for code control"
+      "Git"
     ]
   },
   "photo_graph": {
@@ -50,7 +50,7 @@
     "KeyTechnologies": [
       "React.js",
       "React Router",
-      "Formik & Yup (forms and validation)",
+      "Formik & Yup",
       "React Calendar / Datepicker",
       "Axios",
       "Swiper",
@@ -69,13 +69,7 @@
       "IT Academy RPG – a dynamic platform to showcase the IT Academy RPG project. Built with Next.js, using SSR for fast loading and optimal performance.",
       "The site supports multilingual (i18n), making it accessible to a wider audience. Tailwind CSS is used for a modern and responsive interface. Git is applied for version control."
     ],
-    "KeyTechnologies": [
-      "Next.js",
-      "Tailwind",
-      "SSR",
-      "i18n",
-      "Git for code control"
-    ]
+    "KeyTechnologies": ["Next.js", "Tailwind", "SSR", "i18n", "Git"]
   },
   "yachtJet": {
     "image": "yachtJet",
@@ -91,13 +85,7 @@
       "Implemented JavaScript logic to meet functional requirements.",
       "Close collaboration with designers and stakeholders to ensure precise layout and specifications."
     ],
-    "KeyTechnologies": [
-      "HTML",
-      "CSS",
-      "JavaScript",
-      "Responsive design",
-      "Collaboration tools (e.g., Git for code control)"
-    ]
+    "KeyTechnologies": ["HTML", "CSS", "JavaScript", "Responsive design", "Git"]
   },
   "portfolio": {
     "image": "portfolio",
@@ -113,13 +101,7 @@
       "Assisted team members in solving technical issues to increase efficiency.",
       "Followed project layout and specifications."
     ],
-    "KeyTechnologies": [
-      "HTML",
-      "CSS",
-      "JavaScript",
-      "Responsive design",
-      "Collaboration tools (e.g., Git for code control)"
-    ]
+    "KeyTechnologies": ["HTML", "CSS", "JavaScript", "Responsive design", "Git"]
   },
   "movieFinder": {
     "image": "movieFinder",
@@ -137,12 +119,7 @@
       "- Popular movies: homepage shows trending films.",
       "- Routing: efficient navigation between pages using React Routes."
     ],
-    "KeyTechnologies": [
-      "React.js",
-      "React Routes",
-      "JavaScript",
-      "CSS (styling)"
-    ]
+    "KeyTechnologies": ["React.js", "React Routes", "JavaScript", "CSS"]
   },
   "water": {
     "image": "water",
@@ -263,10 +240,8 @@
     "image": "backendPB",
     "id": "12",
     "name": "Phone Book Backend",
-    "webSite": "https://validation-5dsv.onrender.com/api-docs",
     "Position": "Backend Developer",
     "TeamSize": "Developer",
-    "ProjectRepository": "https://github.com/oksana12345678/contactsBackendJS",
     "Responsibilities": [
       "Developed backend for Phone Book allowing registration, adding, editing, deleting contacts, and uploading avatars. Ensures secure password storage, file handling, data validation, and cloud service integration for image management."
     ],
@@ -318,26 +293,6 @@
       "Tailwind CSS",
       "Formik",
       "React Query"
-    ]
-  },
-  "my_portfolio": {
-    "image": "my_portfolio",
-    "id": "15",
-    "name": "My Portfolio",
-    "webSite": "https://oksana-tanashchuk-portfolio.netlify.app",
-    "Position": "Developer",
-    "TeamSize": "Solo developer",
-    "ProjectRepository": "https://github.com/oksana12345678/my-portfolio",
-    "Responsibilities": [
-      "My Portfolio – a web app to showcase personal projects and skills in a clean, responsive, and interactive way."
-    ],
-    "KeyTechnologies": [
-      "React",
-      "Swiper",
-      "Styled Components",
-      "React Icons & React Icon",
-      "Formik",
-      "Gulp"
     ]
   },
   "visit_button": "Visit",
