@@ -1,5 +1,9 @@
 import { useEffect } from "react";
-import { CloseButton, ModalContainer } from "./ModalWindow.styled";
+import {
+  ButtonContainer,
+  CloseButton,
+  ModalContainer,
+} from "./ModalWindow.styled";
 
 const ModalWindow = ({ children, isOpen, openToggle }) => {
   useEffect(() => {
@@ -18,12 +22,14 @@ const ModalWindow = ({ children, isOpen, openToggle }) => {
     <>
       {isOpen && (
         <ModalContainer>
-          <CloseButton onClick={openToggle}>
-            <div></div>
+          <ButtonContainer>
+            <CloseButton onClick={openToggle}>
+              <div></div>
 
-            <div></div>
-          </CloseButton>
-          {children}
+              <div></div>
+            </CloseButton>
+            {children}
+          </ButtonContainer>
         </ModalContainer>
       )}
     </>

@@ -16,7 +16,7 @@ export const SocialMediaList = styled.ul`
     justify-content: ${({ content }) => content || "center"};
 
     display: flex;
-    gap: 24px;
+    gap: 64px;
   }
 `;
 
@@ -28,14 +28,14 @@ export const Icons = styled(SlSocialLinkedin)`
     transition:
       color 0.4s ease-in-out,
       filter 0.4s ease-in-out;
-    filter: drop-shadow(0 4px 15px var(--error-color))
-      drop-shadow(0 0 3px var(--error-color));
+    filter: drop-shadow(0 4px 15px var(--accent-color-light-hover))
+      drop-shadow(0 0 3px var(--accent-color-light-hover));
 
     &:hover {
       /* color: var(--accent-color-light-hover); */
 
-      filter: drop-shadow(2px 4px 10px var(--error-color))
-        drop-shadow(0 0 24px var(--error-color));
+      filter: drop-shadow(2px 4px 10px var(--accent-color-light-hover))
+        drop-shadow(0 0 24px var(--accent-color-light-hover));
     }
   }
 
@@ -53,14 +53,14 @@ export const IconsGit = styled(VscGithubAlt)`
     transition:
       color 0.4s ease-in-out,
       filter 0.4s ease-in-out;
-    filter: drop-shadow(0 4px 15px var(--error-color))
-      drop-shadow(0 0 3px var(--error-color));
+    filter: drop-shadow(0 4px 15px var(--accent-color-light-hover))
+      drop-shadow(0 0 3px var(--accent-color-light-hover));
 
     &:hover {
       /* color: var(--accent-color-light-hover); */
 
-      filter: drop-shadow(2px 4px 10px var(--error-color))
-        drop-shadow(0 0 24px var(--error-color));
+      filter: drop-shadow(2px 4px 10px var(--accent-color-light-hover))
+        drop-shadow(0 0 24px var(--accent-color-light-hover));
     }
   }
 
@@ -79,14 +79,14 @@ export const IconsTelegram = styled(PiTelegramLogoLight)`
       color 0.4s ease-in-out,
       filter 0.4s ease-in-out;
 
-    filter: drop-shadow(0 4px 15px var(--error-color))
-      drop-shadow(0 0 3px var(--error-color));
+    filter: drop-shadow(0 4px 15px var(--accent-color-light-hover))
+      drop-shadow(0 0 3px var(--accent-color-light-hover));
 
     &:hover {
       /* color: var(--accent-color-light-hover); */
 
-      filter: drop-shadow(2px 4px 10px var(--error-color))
-        drop-shadow(0 0 24px var(--error-color));
+      filter: drop-shadow(2px 4px 10px var(--accent-color-light-hover))
+        drop-shadow(0 0 24px var(--accent-color-light-hover));
     }
   }
 

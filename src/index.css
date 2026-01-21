@@ -17,7 +17,11 @@
   --dark-waves: #294259;
   --text-primary-color: #ebeef0;
   --bg-button-color: linear-gradient(rgb(97, 159, 218), rgb(207, 226, 241));
-  --bg-color-accent: linear-gradient(rgb(62, 88, 112), var(--main-bg));
+  --bg-color-accent: linear-gradient(
+    to right,
+    rgb(62, 88, 112),
+    rgba(62, 88, 112, 0.523)
+  );
   --bg-color: linear-gradient(
     to bottom,
     rgba(97, 159, 218, 0.5) 60%,
@@ -32,7 +36,7 @@
   --light-text-color: #fbfbfb;
   --hover-buttons-blu: rgb(207, 226, 241);
   --accent-color: rgb(97, 159, 218);
-  --accent-color-light-hover: rgba(255, 88, 96, 0.8);
+  --accent-color-light-hover: var(--text-primary-color);
   --light_red_text: rgba(245, 204, 206, 0.8);
 
   --grey-text-color: rgb(226, 226, 226);
@@ -40,7 +44,7 @@
 
   --error-color: #e74a3b;
   --send: rgba(228, 226, 195, 0.8);
-  --success-green-color: #3cbc81;
+  --success-green-color: #42ba82;
   --transition-base: all 0.3s ease;
 
   background-image: var(--new-gradient);

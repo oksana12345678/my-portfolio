@@ -23,9 +23,11 @@ const OpenProjectCard = ({ project, image, t }) => {
         <TechnologyAndRepoContainer>
           <NameAndLink>
             <NameStyled>{project.name}</NameStyled>
-            <LinksStyled href={project.webSite} target="blank">
-              {t("visit_button")}
-            </LinksStyled>
+            {project.webSite && (
+              <LinksStyled href={project.webSite} target="blank">
+                {t("visit_button")}
+              </LinksStyled>
+            )}
           </NameAndLink>
           <ContainerWrapper>
             <h4>{t("position")}</h4> : <p>{project.Position}</p>

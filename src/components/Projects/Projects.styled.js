@@ -1,7 +1,14 @@
 import styled from "styled-components";
 
 export const SectionStyled = styled.section`
-  padding: 60px 0;
+  @media screen and (min-width: 320px) {
+    padding: 40px 0;
+    height: 400px;
+    overflow: hidden;
+  }
+  @media screen and (min-width: 768px) {
+    height: 899px;
+  }
 `;
 
 export const MainContainerProjects = styled.div`

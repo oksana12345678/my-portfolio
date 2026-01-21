@@ -3,18 +3,17 @@ import styled from "styled-components";
 export const ContainerDesc = styled.div`
   @media screen and (min-width: 320px) {
     border-radius: 16px;
-    padding: 24px 12px;
     display: flex;
     flex-direction: column;
     gap: 8px;
     /* height: 100%; */
     justify-content: flex-start;
     color: var(--text-primary-color);
+    max-width: 1440px;
   }
 
   @media screen and (min-width: 768px) {
     gap: 24px;
-    padding: 32px;
   }
 `;
 
@@ -27,20 +26,20 @@ export const NameAndLink = styled.div`
 
   @media screen and (min-width: 768px) {
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
   }
 `;
 
 export const NameStyled = styled.h3`
   @media screen and (min-width: 320px) {
     font-weight: 600;
-    font-size: 24px;
-    text-align: center;
+    font-size: 16px;
+    text-align: start;
   }
 
   @media screen and (min-width: 768px) {
     max-width: 280px;
-    font-size: 38px;
+    font-size: 32px;
   }
 `;
 
@@ -62,7 +61,7 @@ export const LinksStyled = styled.a`
       0 0 25px var(--accent-color-light-hover);
     width: 100%;
     max-width: 220px;
-    margin: 6px auto;
+    margin: 6px 0;
 
     &:hover {
       box-shadow:
@@ -87,9 +86,9 @@ export const ListOfTechnology = styled.ul`
     display: flex;
     flex-wrap: wrap;
     gap: 8px;
-    align-items: center;
+    align-items: flex-start;
     overflow: auto;
-    justify-content: center;
+    justify-content: flex-start;
   }
 
   @media screen and (min-width: 768px) {
@@ -101,7 +100,7 @@ export const ListItemOfTechnology = styled.li`
     background-color: var(--accent-color-light-hover);
     border-radius: 24px;
     padding: 10px;
-    color: var(--text-primary-color);
+    color: var(--main-bg);
   }
 
   @media screen and (min-width: 768px) {
@@ -111,7 +110,7 @@ export const ListItemOfTechnology = styled.li`
 export const LongDescContainer = styled.div`
   @media screen and (min-width: 320px) {
     min-width: 260px;
-    text-align: start;
+    text-align: flex-start;
   }
 
   @media screen and (min-width: 768px) {
@@ -122,29 +121,33 @@ export const ImageContainer = styled.div`
   @media screen and (min-width: 320px) {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    align-items: flex-start;
+    justify-content: space-between;
     gap: 16px;
-    height: 330px;
+    height: max-content;
+    padding-bottom: 12px;
     width: 100%;
+    overflow: hidden;
+    max-width: 800px;
+    padding: 0 24px 16px 24px;
   }
 
   @media screen and (min-width: 768px) {
-    align-items: flex-start;
-
+    max-width: 100%;
     flex-direction: row;
-    gap: 24px;
+    padding: 0 62px;
   }
 `;
 
 export const PortfolioImage = styled.img`
   @media screen and (min-width: 320px) {
-    width: 50%;
-    object-fit: contain;
+    width: 100%;
+    object-fit: cover;
     border-radius: 16px;
   }
 
   @media screen and (min-width: 768px) {
+    width: 50%;
   }
 `;
 
@@ -156,9 +159,11 @@ export const DescContainer = styled.div`
     flex-direction: column;
     gap: 16px;
     justify-content: center;
+    padding: 0 24px;
   }
 
   @media screen and (min-width: 768px) {
+    padding: 0 62px;
   }
 `;
 
@@ -178,6 +183,6 @@ export const ContainerWrapper = styled.div`
   display: flex;
   gap: 4px;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   width: 100%;
 `;

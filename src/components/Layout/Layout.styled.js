@@ -3,8 +3,8 @@ import styled from "styled-components";
 export const HeaderStyled = styled.header`
   padding: 10px 0;
   background-color: transparent;
-  position: fixed;
-  bottom: 0px;
+  position: absolute;
+  top: 0px;
   width: 80%;
   right: 50%;
   transform: translate(50%, 0);

@@ -47,9 +47,9 @@ export const BurgerButton = styled.div`
 
 export const DropdownMenu = styled.ul`
   position: fixed;
-  top: -100%;
+  top: 50%;
   right: 50%;
-  transform: translate(50%, -76%);
+  transform: translate(50%, -4%);
   backdrop-filter: blur(15px);
   width: 100vw;
   height: 100dvh;

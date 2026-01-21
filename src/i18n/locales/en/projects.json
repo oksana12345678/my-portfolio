@@ -233,7 +233,11 @@
     "Position": "Front-end Developer",
     "TeamSize": "2 Developers",
     "ProjectRepository": "https://github.com/Roksana-St/evoplay3",
-    "Responsibilities": ["Landing page for Evoplay company"],
+    "Responsibilities": [
+      " This project is a promotional landing page designed for a modern iGaming product.",
+      "The goal was to create an immersive, high-impact user experience that reflects the dynamics of the game and encourages player engagement.",
+      "The landing page combines bold visuals, smooth animations, and a clear content structure to effectively present the game’s features and atmosphere."
+    ],
     "KeyTechnologies": ["HTML", "SCSS", "Vite"]
   },
   "backendPB": {
@@ -266,7 +270,11 @@
     "Position": "Front-end Developer",
     "TeamSize": "2 Developers",
     "ProjectRepository": "https://github.com/oksana12345678/evoplay_cooking_storm",
-    "Responsibilities": ["Landing page for Evoplay company"],
+    "Responsibilities": [
+      "Cooking Storm is a promotional landing page created for an iGaming slot game, inspired by modern Evoplay-style presentations.",
+      "The project focuses on delivering a dynamic and immersive user experience through bold visuals, smooth animations, and interactive transitions.",
+      "The landing page highlights the game’s theme and key features while maintaining a clear structure that guides the user and encourages engagement."
+    ],
     "KeyTechnologies": ["HTML", "SCSS", "Vite"]
   },
   "crm": {

@@ -7,7 +7,7 @@ export const LanguageContainer = styled.div`
 
 export const LanguageListStyle = styled.ul`
   position: absolute;
-  top: -105px;
+  top: 34px;
   left: -10px;
   margin: 0;
   padding: 5px;

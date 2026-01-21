@@ -7,8 +7,8 @@ const StyledIcon = styled.svg`
   fill: ${({ color }) => color || "currentColor"};
   transition: fill 0.3s ease;
 
-  filter: drop-shadow(0 4px 15px var(--accent-color-light-hover))
-    drop-shadow(0 0 3px var(--accent-color-light-hover));
+  filter: drop-shadow(0 4px 15px var(--text-primary-color))
+    drop-shadow(0 0 3px var(--text-primary-color));
 
   &:hover {
     fill: ${({ hoverColor }) => hoverColor || "currentColor"};

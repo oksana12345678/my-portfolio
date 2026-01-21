@@ -9,7 +9,6 @@ import backendPB from "./backendPB.png";
 import cookingStorm from "./cookingStorm.png";
 import ItAcademy from "./ItAcademy.png";
 import crm from "./crm.png";
-import my_portfolio from "./my_portfolio.png";
 import inHArmony from "./inHArmony.png";
 import RPG from "./RPG.png";
 import photo_graph from "./photo_grap.png";
@@ -26,7 +25,6 @@ export {
   backendPB,
   cookingStorm,
   crm,
-  my_portfolio,
   inHArmony,
   RPG,
   photo_graph,

@@ -43,7 +43,7 @@ export const FooterTitleSpan = styled.span`
 
 export const FooterTitleSecondPart = styled.span`
   @media screen and (min-width: 320px) {
-    color: var(--accent-color-light-hover);
+    color: var(--accent-color);
   }
 `;
 

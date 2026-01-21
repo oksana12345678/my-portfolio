@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const CardWrapper = styled.li`
+export const CardWrapper = styled.div`
   @media screen and (min-width: 320px) {
     height: 100%;
     color: var(--text-primary-color);
@@ -27,11 +27,10 @@ export const PortfolioCardImage = styled.img`
   @media screen and (min-width: 320px) {
     width: 100%;
     object-fit: contain;
-    height: 100%;
+    height: max-content;
   }
 
   @media screen and (min-width: 768px) {
-    height: 100%;
   }
 `;
 
@@ -46,7 +45,7 @@ export const ProjectCardTitleWrapper = styled.div`
 
     h3 {
       @media screen and (min-width: 320px) {
-        font-size: 24px;
+        font-size: 20px;
         font-weight: 500;
         text-transform: uppercase;
         color: var(--grey-text-color);
@@ -55,13 +54,21 @@ export const ProjectCardTitleWrapper = styled.div`
       }
 
       @media screen and (min-width: 768px) {
-        font-size: 60px;
+        font-size: 32px;
         font-weight: 600;
+      }
+
+      @media screen and (min-width: 1024px) {
+        font-size: 52px;
       }
     }
   }
 
   @media screen and (min-width: 768px) {
-    height: 136px;
+    height: 80px;
+  }
+
+  @media screen and (min-width: 1024px) {
+    height: 116px;
   }
 `;

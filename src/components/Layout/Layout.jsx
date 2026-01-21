@@ -1,4 +1,4 @@
-import BgAnimation from "../Animation/BgAnimation";
+import BgAnimation from "../../shared/components/Animation/BgAnimation";
 import Footer from "../Footer/Footer";
 import Header from "../Header/Header";
 import { FooterStyled, HeaderStyled, MainStyled } from "./Layout.styled";
