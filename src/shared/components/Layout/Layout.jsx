@@ -1,6 +1,6 @@
+import Footer from "../../../components/Footer/Footer";
+import Header from "../../../components/Header/Header";
 import BgAnimation from "../Animation/BgAnimation";
-import Footer from "../Footer/Footer";
-import Header from "../Header/Header";
 import { FooterStyled, HeaderStyled, MainStyled } from "./Layout.styled";
 
 const Layout = ({ children }) => {

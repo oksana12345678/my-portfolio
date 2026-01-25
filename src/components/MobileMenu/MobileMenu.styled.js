@@ -65,7 +65,7 @@ export const DropdownMenu = styled.ul`
 
 export const MenuItem = styled.a`
   display: flex;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 20px;
   color: var(--light-text-color);
   padding: 16px 12px;
@@ -74,7 +74,7 @@ export const MenuItem = styled.a`
   align-items: center;
   justify-content: center;
   transition: all 400ms ease-in-out;
-  text-transform: capitalize;
+  text-transform: uppercase;
 
   &:hover {
     box-shadow:

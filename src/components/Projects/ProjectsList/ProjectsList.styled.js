@@ -25,6 +25,6 @@ export const CardsWrapper = styled.li`
   }
 
   @media screen and (min-width: 768px) {
-    height: max-content;
+    height: 620px;
   }
 `;

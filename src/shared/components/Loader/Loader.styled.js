@@ -90,7 +90,7 @@ export const LoaderWrapper = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 100dvh;
   overflow: hidden;
   background-color: var(--send);
 `;

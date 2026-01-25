@@ -13,13 +13,15 @@ const ProjectsCard = ({ project, image, titleRef, index, onClick }) => {
   useEffect(() => {
     if (!headingRef.current) return;
 
-    const split = new SplitText(headingRef.current, {
-      type: "chars,words,lines",
-      linesClass: "clip-text",
-    });
+    document.fonts.ready.then(() => {
+      const split = new SplitText(headingRef.current, {
+        type: "chars,words,lines",
+        linesClass: "clip-text",
+      });
 
-    titleRef.current[index] = split;
-  }, []);
+      titleRef.current[index] = split;
+    });
+  }, [titleRef, index]);
 
   return (
     <CardWrapper onClick={onClick}>

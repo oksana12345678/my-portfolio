@@ -1,9 +1,10 @@
+import "react-toastify/dist/ReactToastify.css";
 import { ToastContainer } from "react-toastify";
+import Layout from "../../shared/components/Layout/Layout";
 import AboutMe from "../AboutMe/AboutMe";
 import Hero from "../Hero/Hero";
-import Layout from "../Layout/Layout";
 import Projects from "../Projects/Projects";
-import "react-toastify/dist/ReactToastify.css";
+import Benefits from "../Benefits/Benefits";
 // import WelcomeAnimation from "../Animation/WelcomeAnimation";
 // import { useEffect, useState } from "react";
 
@@ -26,6 +27,7 @@ const App = () => {
         <Hero />
         <AboutMe />
         <Projects />
+        <Benefits />
       </Layout>
     </>
   );

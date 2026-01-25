@@ -49,20 +49,16 @@ export const ListStyle = styled.ul`
 `;
 
 export const LinkStyle = styled.a`
-  font-weight: 400;
+  font-weight: 500;
   font-size: 20px;
   color: var(--light-text-color);
   padding: 16px 12px;
   border-radius: 16px;
   text-shadow: 0 4px 15px var(--accent-color-light-hover);
-  /* background: var(--accent-color); */
   transition: all 0.3s ease-in-out;
-  text-transform: capitalize;
+  text-transform: uppercase;
 
   &:hover {
-    /* box-shadow: 0 4px 15px var(--accent-color-light-hover),
-      0 0 25px var(--accent-color-light-hover); */
-
     text-shadow: 2px 6px 3px var(--accent-color-light-hover);
   }
 `;

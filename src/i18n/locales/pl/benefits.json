@@ -1,0 +1,19 @@
+{
+  "title": "Korzyści",
+  "clean": {
+    "title": "Wysokiej jakości kod",
+    "description": "Czysty, strukturalny i łatwy w utrzymaniu kod."
+  },
+  "fast": {
+    "title": "Szybko i niezawodnie",
+    "description": "Dostarczanie wyników na czas z zachowaniem stabilnej jakości."
+  },
+  "team": {
+    "title": "Współpraca w zespole",
+    "description": "Łatwa integracja w zespole, wspólne rozwiązywanie problemów."
+  },
+  "development": {
+    "title": "Ciągłe uczenie się",
+    "description": "Zawsze śledzę nowe technologie i stosuję najlepsze praktyki."
+  }
+}

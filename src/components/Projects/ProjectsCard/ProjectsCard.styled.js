@@ -27,7 +27,7 @@ export const PortfolioCardImage = styled.img`
   @media screen and (min-width: 320px) {
     width: 100%;
     object-fit: contain;
-    height: max-content;
+    height: auto;
   }
 
   @media screen and (min-width: 768px) {
@@ -59,7 +59,7 @@ export const ProjectCardTitleWrapper = styled.div`
       }
 
       @media screen and (min-width: 1024px) {
-        font-size: 52px;
+        font-size: 42px;
       }
     }
   }

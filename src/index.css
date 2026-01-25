@@ -1,7 +1,24 @@
 @import "modern-normalize/modern-normalize.css";
 
+@font-face {
+  font-family: "Fredoka";
+  src: url("/src/fonts/Fredoka-VariableFont_wdth,wght.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Fredoka";
+  src: url("/src/fonts/Fredoka-VariableFont_wdth,wght.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family:
+    "Fredoka", Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
@@ -28,7 +45,7 @@
     var(--main-bg) 100%
   );
 
-  --new-gradient: linear-gradient(to right, #294259, var(--main-bg));
+  --new-gradient: radial-gradient(circle closest-side, #00031d, var(--main-bg));
   --new-gradient-bottom: linear-gradient(to bottom, 273f54, var(--main-bg));
 
   --bg-hover-color: rgb(252, 70, 79, 0.7);
@@ -72,6 +89,15 @@ ol {
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Fredoka", sans-serif;
 }
 
 a {

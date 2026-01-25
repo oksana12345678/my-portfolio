@@ -12,6 +12,8 @@
     "test": "jest"
   },
   "dependencies": {
+    "@react-three/drei": "^9.122.0",
+    "@react-three/fiber": "^8.18.0",
     "autoprefixer": "^10.4.20",
     "axios": "^1.7.7",
     "cssnano": "^7.0.6",
@@ -35,7 +37,8 @@
     "react-toastify": "^10.0.6",
     "styled-components": "^6.1.13",
     "swiper": "^11.1.14",
-    "tech-stack-icons": "^3.5.7"
+    "tech-stack-icons": "^3.5.7",
+    "three": "^0.182.0"
   },
   "devDependencies": {
     "@babel/core": "^7.26.7",

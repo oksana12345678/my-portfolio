@@ -1,0 +1,19 @@
+{
+  "title": "Benefits",
+  "clean": {
+    "title": "High-quality Code",
+    "description": "Clean, structured, and maintainable code."
+  },
+  "fast": {
+    "title": "Fast & Reliable",
+    "description": "Delivering results on time with stable quality."
+  },
+  "team": {
+    "title": "Team Collaboration",
+    "description": "Seamless teamwork, solving problems together."
+  },
+  "development": {
+    "title": "Continuous Learning",
+    "description": "Always exploring new technologies and best practices."
+  }
+}

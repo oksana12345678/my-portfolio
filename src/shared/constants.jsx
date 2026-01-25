@@ -21,7 +21,14 @@ import {
 
 export const LANGUAGES = { UA: "ua", EN: "en", PL: "pl" };
 
-export const NAMESPACES = ["header", "hero", "footer", "about", "projects"];
+export const NAMESPACES = [
+  "header",
+  "hero",
+  "footer",
+  "about",
+  "projects",
+  "benefits",
+];
 
 export const SKILLS = [
   { name: "HTML", icon: <StackIcon name="html5" /> },
