@@ -50,9 +50,12 @@ const Footer = () => {
 
     setIsSubmitting(true);
 
-    fetch("/", {
+    fetch("https://hook.eu1.make.com/mib6fb9rw5msxe1lyc8asippmo52wvap", {
       method: "POST",
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      headers: {
+        "Content-Type": "application/x-www-form-urlencoded",
+        "x-make-apikey": "gateway-webhook",
+      },
       body: new URLSearchParams({
         "form-name": "contact",
         ...formValues,
@@ -69,7 +72,7 @@ const Footer = () => {
       .catch((error) => {
         showToast(
           ` There was an error sending your message. Please try again later.  ${error}`,
-          "error"
+          "error",
         );
       })
       .finally(() => setIsSubmitting(false));
