@@ -18,8 +18,11 @@ export const ModalContainer = styled.div`
   }
 
   @media screen and (min-width: 768px) {
-    width: 1160px;
+    width: 680px;
     height: 80%;
+  }
+  @media screen and (min-width: 1440px) {
+    width: 1160px;
   }
 `;
 
