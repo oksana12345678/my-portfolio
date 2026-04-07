@@ -26,11 +26,16 @@ export const ImageCardContainer = styled.div`
 export const PortfolioCardImage = styled.img`
   @media screen and (min-width: 320px) {
     width: 100%;
-    object-fit: contain;
+    object-fit: cover;
     height: auto;
   }
 
   @media screen and (min-width: 768px) {
+    height: 446px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    height: auto;
   }
 `;
 
